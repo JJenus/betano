@@ -1,0 +1,2963 @@
+<!DOCTYPE html>
+
+<html
+	lang="en-NG"
+	langiso="en"
+	class="mobile-mode"
+	style="
+		--theme-brand-color-primary: #ff6600;
+		--theme-brand-color-primary-hover: #c74f00;
+		--theme-brand-color-secondary: #37a25c;
+		--theme-brand-color-secondary-hover: #2d864c;
+		--theme-brand-color-gradient-primary: #6e3a1a;
+		--kyc-banner-color: #1c6848;
+		--theme-brand-color-tertiary: #3a7824;
+		--theme-brand-color-quartary: #a2c774;
+		--header-height: 55px;
+	"
+>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style id="swiper-element-styles">
+			@font-face {
+				font-family: swiper-icons;
+				src: url("data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA");
+				font-weight: 400;
+				font-style: normal;
+			}
+		</style>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1,maximum-scale=1"
+		/>
+		<meta name="Author" content="betano" />
+
+		<meta name="robots" content="index,follow" />
+		<script src="/assets/betano/c_qte2wy7lRjQV2DEnwGyJEyCeI.js"></script>
+		<script
+			bis_use="true"
+			type="text/javascript"
+			charset="utf-8"
+			data-bis-config='["facebook.com/","twitter.com/","youtube-nocookie.com/embed/","//vk.com/","//www.vk.com/","//linkedin.com/","//www.linkedin.com/","//instagram.com/","//www.instagram.com/","//www.google.com/recaptcha/api2/","//hangouts.google.com/webchat/","//www.google.com/calendar/","//www.google.com/maps/embed","spotify.com/","soundcloud.com/","//player.vimeo.com/","//disqus.com/","//tgwidget.com/","//js.driftt.com/","friends2follow.com","/widget","login","//video.bigmir.net/","blogger.com","//smartlock.google.com/","//keep.google.com/","/web.tolstoycomments.com/","moz-extension://","chrome-extension://","/auth/","//analytics.google.com/","adclarity.com","paddle.com/checkout","hcaptcha.com","recaptcha.net","2captcha.com","accounts.google.com","www.google.com/shopping/customerreviews","buy.tinypass.com","gstatic.com","secureir.ebaystatic.com","docs.google.com","contacts.google.com","github.com","mail.google.com","chat.google.com","audio.xpleer.com","keepa.com","static.xx.fbcdn.net","sas.selleramp.com","1plus1.video","console.googletagservices.com"]'
+			src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executers/vi-tr.js"
+		></script>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			.\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\], AD-SLOT, AD-TRIPLE-BOX, DFP-AD, [class^="adDisplay-module"], [class^="amp-ad-"], [data-ad-cls], [data-ad-manager-id], [data-ad-module], [data-adblockkey], [data-adbridg-ad-class], [data-adshim], [data-advadstrackid], [data-block-type="ad"], [data-css-class="dfp-inarticle"], [data-d-ad-id], [data-desktop-ad-id], [data-dynamic-ads], [data-ez-name], [data-freestar-ad]:not(:empty), [data-id^="div-gpt-ad"], [data-m-ad-id], [data-mobile-ad-id], [data-name="adaptiveConstructorAd"], [data-rc-widget], [data-revive-zoneid] > iframe, [data-role="tile-ads-module"], [data-template-type="nativead"], [data-testid="adBanner-wrapper"], [data-testid="ad_testID"], [data-type="ad-vertical"], [data-wpas-zoneid], [id^="ad-wrap-"], [id^="ad_sky"], [id^="ad_slider"], [id^="section-ad-banner"], [name^="google_ads_iframe"], [onclick^="location.href='https://1337x.vpnonly.site/"], a-ad, a[data-href^="http://ads.trafficjunky.net/"], a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], ad-shield-ads, ad-slot, app-ad, app-advertisement, app-large-ad, ark-top-ad, aside[id^="adrotate_widgets-"], atf-ad-slot, bottomadblock, display-ad-component, display-ads, div[class^="Adstyled__AdWrapper-"], div[class^="Display_displayAd"], div[class^="kiwi-ad-wrapper"], div[class^="native-ad-"], div[data-ad-placeholder], div[data-ad-wrapper], div[data-adname], div[data-adunit-path], div[data-adunit], div[data-adzone], div[data-alias="300x250 Ad 1"], div[data-alias="300x250 Ad 2"], div[data-content="Advertisement"], div[data-contentexchange-widget], div[data-dfp-id], div[data-google-query-id], div[data-id-advertdfpconf], div[data-insertion], div[data-mini-ad-unit], div[data-native-ad], div[id^="_vdo_ads_player_ai_"], div[id^="ad-div-"], div[id^="ad-position-"], div[id^="adngin-"], div[id^="adrotate_widgets-"], div[id^="ads250_250-widget-"], div[id^="ads300_100-widget-"], div[id^="ads300_250-widget-"], div[id^="adspot-"], div[id^="advads_ad_"], div[id^="crt-"][style], div[id^="div-ads-"], div[id^="google_dfp_"], div[id^="gpt_ad_"], div[id^="lazyad-"], div[id^="optidigital-adslot"], div[id^="pa_sticky_ad_box_middle_"], div[id^="rc-widget-"], div[id^="sticky_ad_"], div[id^="vuukle-ad-"], gpt-ad, guj-ad, hl-adsense, img[src^="https://images.purevpnaffiliates.com"], ps-connatix-module, span[data-ez-ph-id], span[id^="ezoic-pub-ad-placeholder-"], topadblock, zeus-ad, [class^="tile-picker__CitrusBannerContainer-sc-"], citrus-ad-wrapper, [class^="s2nPlayer"], div[id*="MarketGid"], [onclick*="content.ad/"], AMP-AD, amp-ad, amp-ad-custom, amp-connatix-player, amp-fx-flying-carpet, a[data-obtrack^="http://paid.outbrain.com/network/redir?"], a[data-oburl^="https://paid.outbrain.com/network/redir?"], a[data-redirect^="https://paid.outbrain.com/network/redir?"], a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], div[id^="taboola-stream-"], div[id^="zergnet-widget"], [onclick*="window.open('http://deloplen.com/"], [data-uri^="https://s3.amazonaws.com"], [data-lnguri^="https://s3.amazonaws.com"], [onclick*="postlnk.com"], [class^="DisplayAd"], div[class*="displayAdRight"], [data-lnguri*="vipbox"], [class^="div-gpt-ad"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]), [id^="div-gpt-ad"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]), div[id^="div-gpt-"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]), .samBannerUnit, .samCodeUnit, [src^="//dombnrs.com/"], [src^="https://forum.picbaron.com/Banner"], div[id][style^="position: fixed; inset: 0px; z-index: 2147483647; background: black"][style*="opacity: 0.01"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-ad-name], [data-ad-width], div[aria-label="Ads"], div[data-ad-targeting], div[data-native_ad], div[id^="ad_position_"], div[id^="dfp-ad-"], div[id^="ezoic-pub-ad-"], div[id^="yandex_ad"], ins.adsbygoogle[data-ad-slot], div[id*="ScriptRoot"], a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], amp-embed[type="taboola"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			#\5f CookieText,
+			#\5f _accept_cookie,
+			#\5f _ic-notice,
+			#\5f _ndcc_cookieImpliedConsent,
+			#\5f cookieConsentWrapper,
+			#\5f iph_cp_popup,
+			#cookieBanner\.banner,
+			#js\.cookie\.banner,
+			.sÂ·footer-gdpr,
+			.сookieAgreement,
+			COOKIE-HEADER,
+			DCINFO_COOKIE_AGB,
+			GDPR-NOTICE,
+			[app-cookie-banner-control],
+			[aria-describedby="cookie-box-message"],
+			[aria-describedby="cookie-information"],
+			[aria-describedby="cookieprivacy"],
+			[aria-describedby="cookies-policy-message"],
+			[aria-describedby="dialog-eu-cookie-law"],
+			[aria-describedby^="cookie-wall-"],
+			[aria-label="Cookies banner"],
+			[aria-labelledby="cookie-dialog"],
+			[aria-labelledby="cookie-wall-heading"],
+			[aria-labelledby="ui-dialog-title-cookiebox"],
+			[cnn-cookie-policy],
+			[cookie-unique-name],
+			[data-alert-cookie],
+			[data-at-selector="cookie-banner"],
+			[data-automation="cookies-banner"],
+			[data-behaviour="cookie-popup"],
+			[data-bind="visible: showCookieWarning"],
+			[data-ccpa],
+			[data-component-class-name="cookieLightbox"],
+			[data-cookie-name="cookiesDirective"],
+			[data-cookie-number],
+			[data-cookie-popup],
+			[data-cookie-validity-days],
+			[data-cookie="uso-accept-cookies"],
+			[data-cookie^="cookie.disclaimer"],
+			[data-cvent-id="cookie-banner"],
+			[data-cy="cookie-notice"],
+			[data-cy="cookiebar"],
+			[data-dialog-id="accept-cookies"],
+			[data-dmid*="cookiebar-"],
+			[data-dmscookie],
+			[data-g-name="CookieBanner"],
+			[data-gaoop_hide_after_close],
+			[data-inc="cookies"],
+			[data-include="cookie"],
+			[data-include="cookies"],
+			[data-key="cookies-warning"],
+			[data-module="CookieBanner"],
+			[data-module="cookies"],
+			[data-name="cookieNotice"],
+			[data-name^="CookiesNotification"],
+			[data-notification="CookiePolicyAgreement"],
+			[data-qa="CookieBar"],
+			[data-qa="txtGdprCookiePopup"],
+			[data-react-class*="CookieConsentBanner"],
+			[data-react-class="EUCookieBanner"],
+			[data-react-component="CookiePrompt"],
+			[data-ref="cookies"],
+			[data-rgpd-inc],
+			[data-role="cookie-notice"],
+			[data-s-type="cookie-message"],
+			[data-selector="cookie-policy"],
+			[data-target="coockie"],
+			[data-test-id="CookiePopup"],
+			[data-test-id="check-cookie-consent"],
+			[data-test-id="cookie-consent-banner"],
+			[data-test-id="cookie-policy-banner"],
+			[data-test="cookie-banner"],
+			[data-test="cookie-policy-sheet"],
+			[data-test="gdpr-cookies-popup"],
+			[data-test="gdpr-modal"],
+			[data-testid="accept-cookies-banner"],
+			[data-testid="consent-banner"],
+			[data-testid="cookie-bar"],
+			[data-testid="cookie-policy"],
+			[data-testid="cookie-popover"],
+			[data-testid="cookieBanner-widget"],
+			[data-testid="cookieConsentBanner"],
+			[data-testid="cookie_banner_v2_container"],
+			[data-testid="cookienotice-container"],
+			[data-testid="cookies-module"],
+			[data-testid="cookies_footer"],
+			[data-testid="main-cookies-banner-container"],
+			[data-token="gdpr_cookie_notice"],
+			[data-type="cookie-addsense"],
+			[data-ui-test="cookieAlert"],
+			[data-unique-cookie-name],
+			[data-veci="cookies-policy"],
+			[data-view-name="privacy-updated-notice"],
+			[id="lux-cookie-dialog"],
+			[name="cookie-info"],
+			[name="cookiewarning"],
+			[ng-controller="CookieBannerCtrl"],
+			[ng-show^="cookiePolicyCtrl"],
+			[type="cookie-notification"],
+			[x-data="cookieBanner()"],
+			[x-show="showCookieConsent"],
+			accept-cookie-box,
+			acidjs-xcookie-consent,
+			adcookies,
+			alterdata-cookie-tool,
+			amedia-privacybox,
+			amp-consent,
+			amp-user-notification,
+			app-accept-cookie,
+			app-aviso-cookie,
+			app-aviso-cookies,
+			app-banner[arialabel*="Cookies"],
+			app-cb-cookies,
+			app-ccpa-banner,
+			app-cookie,
+			app-cookie-banner,
+			app-cookie-bar,
+			app-cookie-consent,
+			app-cookie-consent-banner,
+			app-cookie-consent-feature,
+			app-cookie-consent-modal,
+			app-cookie-consent-popup,
+			app-cookie-footer,
+			app-cookie-info,
+			app-cookie-msg,
+			app-cookie-notification,
+			app-cookie-policy,
+			app-cookie-popup,
+			app-cookie-prompt,
+			app-cookie-rules,
+			app-cookie-widget,
+			app-cookies-agreement,
+			app-cookies-alert,
+			app-cookies-banner,
+			app-cookies-box,
+			app-cookies-confirm,
+			app-cookies-consent,
+			app-cookies-modal,
+			app-cookies-notice,
+			app-cookies-policy,
+			app-cookies-policy-updated,
+			app-cookies-popup,
+			app-cookies-toast,
+			app-foncia-cookie-banner,
+			app-footer-modal-cookie,
+			app-pop-up-cookies,
+			app-rodo,
+			app-root app-cookie-acceptance,
+			ark-cookiebar,
+			aside[class="rgpd"],
+			atlas-logon-cookie-policy,
+			avis-cookies,
+			awsui-alert[dismiss*="CookieBanner"],
+			aza-cookie-message,
+			b2c-cookies-notification,
+			body > .btn-cookie,
+			browser-login-cookie-notification,
+			c-community-cookie-consent-banner,
+			c-cookie-consent,
+			c-ecp-cookies-banner,
+			c-osf-cookie-consent-banner,
+			cbn-cookies,
+			cg-cookies-banner,
+			cloudflare-app[app="cookiless"],
+			cloudflare-app[app="tibrr-cookie-consent"],
+			cmm-cookie-banner,
+			cmpviews-cookies-accept,
+			cn-cookie-agreement,
+			col-cookie-info-banner,
+			comply-consent-manager,
+			con-cookie-popup,
+			consent,
+			consent-notification,
+			cook-disclaimer,
+			cookie-agreement-block,
+			cookie-alert,
+			cookie-banner,
+			cookie-bar,
+			cookie-confirmation,
+			cookie-consent,
+			cookie-consent-banner,
+			cookie-consent-component,
+			cookie-drawer-policy,
+			cookie-info,
+			cookie-law-banner,
+			cookie-modal,
+			cookie-notice,
+			cookie-notification,
+			cookie-permission,
+			cookie-policy-popin,
+			cookie-popup,
+			cookie-warning,
+			cookie-wrap,
+			cookie_notice,
+			cookiebox,
+			cookies-consent,
+			cookies-gdpr,
+			cookies-hint,
+			cookies-notification,
+			cookies-overlay,
+			cookies-policy,
+			cookies-popup,
+			cookies-requirement,
+			cookies-warning,
+			cookies.ng-scope,
+			cookiless-div,
+			cru-cookie-policy,
+			cts-disclaimer-cookies,
+			dayaway-cookie-consent,
+			dialog.cookie-policy,
+			dile-cookies-consent,
+			div[data-automation="privacy-banner-wrapper"],
+			div[data-banner="cookies"],
+			div[data-borlabs-cookie-wrap],
+			div[data-box-name="cookie policy"],
+			div[data-cmp-no-consent],
+			div[data-component="cookie-policy"],
+			div[data-component="cookieContent"],
+			div[data-components="pdr-ws1lib-header"],
+			div[data-container-acceptcookies],
+			div[data-cookie-law-banner-selector],
+			div[data-cookie-notification],
+			div[data-cookie-path],
+			div[data-cookie-warning],
+			div[data-cookiebanner],
+			div[data-cookiebar],
+			div[data-cookielayer-init],
+			div[data-corgi-component="cookie-banner"],
+			div[data-etsy-promo-cookie-expires],
+			div[data-id="cookieBar"],
+			div[data-id="cookie_dialog"],
+			div[data-is-cookieinfo],
+			div[data-module="cookie_banner"],
+			div[data-notificationid="cookie"],
+			div[data-pnp-mi-id="mi-cookies"],
+			div[data-pov-accept-cookies-message],
+			div[data-privacy-consent],
+			div[data-react-class="CookieNotice"],
+			div[data-role="cookie-policy-banner"],
+			div[data-section-type="CookiesBanner"],
+			div[data-selector="container@cookiebar"],
+			div[data-selen-group="cookies-bar"],
+			div[data-selenium="CookieBanner"],
+			div[data-storage-item^="t886cookiename_"],
+			div[data-test-sell-cookie-banner],
+			div[data-test="cookie-policy-banner"],
+			div[data-testid="cookie-disclaimer"],
+			div[data-wzb="CookieNotification"],
+			div[element-structure-cookiemonster],
+			div[js-cookies],
+			div[ld-scope="cookie-consent"],
+			div[ng-click="self.setCookieDisclaimer()"],
+			div[spec="cookie-disclaimer"],
+			dk-cookie-warning,
+			dva-m-cookie-flyout,
+			ea-truste-consent-bar,
+			edn-cookie,
+			emv-anonymous-consent-management-banner,
+			eo-cookie-bar,
+			epaas-consent-drawer-shell,
+			esn-cookie-disclaimer,
+			eu-cookie-compliance,
+			fab-cookie-control-banner2,
+			fdp-widget-cookie-consent,
+			footer > #cookies,
+			footer > .cookie,
+			form[name="FormLeggeCookies"],
+			g-cookie-policy,
+			gdpr-age-consent-modal,
+			gdpr-consent,
+			gdpr-cookies,
+			gdpr-policies,
+			gdprpopupmod,
+			gds-consent-manager,
+			gfp-cookie-policy-notice,
+			gj-cookie-prompt,
+			hma-cookie-notification,
+			idg-cookie-info-bar,
+			iframe[name="googlefcPresent"],
+			ing-ui-rba-cookie,
+			ir-cookie-consent,
+			jsa-cookie,
+			kuma-cookie-bar,
+			lgpd-cookie,
+			lgpd-cookie-terms,
+			lib-privacy-policy-toast,
+			lnb-cookie-policy-overlay,
+			loop-cookie,
+			luno-cookie-preferences,
+			m-cookies-notice,
+			mct-templater-cookie-consent,
+			md-toast.cookies-toast,
+			mip-cookie-info,
+			n9-disclaimer-cookies,
+			nges-cookie-notification,
+			nl-cookie-notice,
+			nosid-cookie-banner,
+			ns-cookie-privacy-tip,
+			o-cookie-law,
+			ocaso-global-modal,
+			oct-cookie-consent,
+			ods-accept-cookies-message,
+			of-cookies-notice,
+			ofi-cookie-box-widget,
+			onl-cookie,
+			outer-wrapper-cookie,
+			pd-cookie-banner,
+			pdo-cookies-policy,
+			pp-cookie-dialog,
+			privacy-policy-toast,
+			proactua-cookie-consent,
+			puma-cookie-banner,
+			rtk-cookies-notice,
+			s72-cookie-consent,
+			sd-cookies-widget,
+			section > .cookie,
+			section[class*="_CookieNotice"],
+			section[data-component="Com3Cookie"],
+			section[data-test-id="cookie-notice"],
+			section[data-view="cookiePolicy"],
+			sell-cookie-banner,
+			shb-cookie-accept,
+			shb-cookie-consent,
+			sj-cookie-banner,
+			son-cookie-consent,
+			staedtler-cookie-banner,
+			suchen-cookie-privacy-toast,
+			tag-cookie-banner,
+			thread-cookie-notice,
+			tpl-cookieconsent,
+			ts-cookie-msg,
+			tui-cookie-bar,
+			tui-cookie-consent,
+			tuugo-notification,
+			uc-cookie-notification,
+			ugc-cookie-banner,
+			ux-cookie-layer,
+			vc-site-cookiepolicy-dialog,
+			veiss-cookies,
+			vls-cookie-banner,
+			voc-cookie-warning,
+			wc-cookies,
+			web-cookie-consent,
+			wecoma-lite,
+			wieland-cookie-banner,
+			wp-cookie-notification-banner,
+			wx-cookie-policy-notification,
+			xk-cookie-policy-warning,
+			yd-cookie-notice,
+			yg-cookie-confirm,
+			ytd-app ~ iron-overlay-backdrop,
+			ytd-consent-bump-renderer,
+			ytd-mealbar-promo-renderer,
+			ytg-notification-footer,
+			zapf-cookie-banner,
+			article.c-cookies,
+			article.cookie-banner,
+			article.cookie-container,
+			aside#cookie-popup,
+			aside#eu_cookie_law_widget-2,
+			aside.amgdprjs-bar-template,
+			aside.bottom-cookies,
+			aside.cookie-banner,
+			aside.cookie-bar,
+			aside.cookie-popup,
+			div#ACClayerBackground,
+			div#ACCsmallCookieLayer,
+			div#accept-cookie,
+			div#accept-cookie-container,
+			div#aceptar_container,
+			div#allow-cookies,
+			div#cc-consent-container,
+			div#cc_container,
+			div#ccpa-consent,
+			div#ccpaCookieBanner,
+			div#cmc-cookie-policy-banner,
+			div#consent-cookie-container,
+			div#consent-manager-container,
+			div#consentComponentContainer,
+			div#consentContainer,
+			div#consentframe,
+			div#contenedor-cookies,
+			div#cookie-accept-container,
+			div#cookie-acceptance,
+			div#cookie-alert-container,
+			div#cookie-banner-container,
+			div#cookie-banner_container,
+			div#cookie-bar,
+			div#cookie-bar-container,
+			div#cookie-bar-prompt,
+			div#cookie-check,
+			div#cookie-choice-container,
+			div#cookie-info-container,
+			div#cookie-law-banner,
+			div#cookieBotHide1,
+			div#cookieConsentStickyFooter,
+			div#cookiePopup,
+			div#cookie_banner,
+			div#cookies-background,
+			div#cookies-pop,
+			div#cookiesApproval,
+			div#cookiesLightbox,
+			div#cookiesdirective,
+			div#dcCookieHelper,
+			div#dcCookieHelper--bg,
+			div#eu-cookies-popup,
+			div#gdpr-cookie-accept,
+			div#gdprCookieBar,
+			div#gdprpatronInfoleiste,
+			div#gdprpatronInfoleisteOverlay,
+			div#lgpd,
+			div#lgpd-banner,
+			div#lgpd-warning-container,
+			div#shadCookie,
+			div#tracking-consent-dialog,
+			div#whCookieManager,
+			div.-cookie,
+			div.-cookie-notice,
+			div.-cookies,
+			div.-cookies-notice,
+			div.-cookies__alert,
+			div.AcceptCookies,
+			div.BoxCookie,
+			div.ConsentCookie,
+			div.Cookie,
+			div.Cookie-banner,
+			div.Cookie-notice,
+			div.Cookie-wrapper,
+			div.CookieAccept,
+			div.CookieAlert,
+			div.CookieConfirmation,
+			div.CookieInfo,
+			div.CookieMessage__cookieMessage,
+			div.CookiePrompt,
+			div.CookieWrapper,
+			div.Cookie__Popup,
+			div.Cookies,
+			div.CookiesWrap,
+			div.EUCookie,
+			div.GdprCookieConsent-ConsentContainer,
+			div.GdprCookieConsent-ConsentContainerOverlay,
+			div.PrivacyBanner,
+			div.PrivacyCookie,
+			div.accept-cookie,
+			div.accept-cookies,
+			div.accept-rgpd,
+			div.acceptCookie,
+			div.acceptCookies,
+			div.accept__cookies,
+			div.acceptcookie,
+			div.acceptcookies,
+			div.accepted-cookies,
+			div.agreecookie,
+			div.alert-cook,
+			div.alert-cookie,
+			div.alert-cookies,
+			div.alert-gdpr,
+			div.alertCookie,
+			div.alertCookies,
+			div.alert__cookies,
+			div.allow-cookie,
+			div.allow-cookies,
+			div.allowcookie,
+			div.ap-cookie-consent,
+			div.app-cookies,
+			div.ask-cookie,
+			div.askcook,
+			div.aviso-cookie,
+			div.aw-cookie-banner,
+			div.b--cookie,
+			div.b-cookie,
+			div.block-cnil,
+			div.block-cookie,
+			div.block-cookie-warning,
+			div.block-cookies,
+			div.blog-cookie,
+			div.bottom-cookies,
+			div.box_lgpd,
+			div.c-consent,
+			div.c-cookie,
+			div.c-cookieConsent,
+			div.c-cookieconsent,
+			div.c-gdpr,
+			div.cPolicy,
+			div.cc-CookieWarning,
+			div.cc-revoke,
+			div.ccpa-notice,
+			div.civic_cookie__banner,
+			div.civic_cookie__overlay,
+			div.cnil-popup,
+			div.confirm-cookie,
+			div.consent-banner-container,
+			div.consent-bg,
+			div.consent-dialog,
+			div.consent-show,
+			div.consent-summary-shown,
+			div.consent-tracking,
+			div.consentbanner,
+			div.containerCookies,
+			div.conten-cookies,
+			div.coockiesdiv,
+			div.cookie--bar,
+			div.cookie--blur,
+			div.cookie--notice,
+			div.cookie--wrapper,
+			div.cookie-accept-container,
+			div.cookie-background,
+			div.cookie-banner-wrapper,
+			div.cookie-bar--is-visible,
+			div.cookie-bar-visible,
+			div.cookie-black,
+			div.cookie-bloc,
+			div.cookie-choices,
+			div.cookie-compilance,
+			div.cookie-compliance,
+			div.cookie-consent-bar,
+			div.cookie-consent-block,
+			div.cookie-consent-open,
+			div.cookie-consent-overlay,
+			div.cookie-consent-show,
+			div.cookie-consent-window,
+			div.cookie-details,
+			div.cookie-directive,
+			div.cookie-disclamer,
+			div.cookie-disclosure,
+			div.cookie-div,
+			div.cookie-eu,
+			div.cookie-gdpr,
+			div.cookie-header,
+			div.cookie-hint,
+			div.cookie-hinweis,
+			div.cookie-hold,
+			div.cookie-info,
+			div.cookie-message,
+			div.cookie-msg,
+			div.cookie-notice-big,
+			div.cookie-notice-body,
+			div.cookie-notice-consent,
+			div.cookie-notice-open,
+			div.cookie-notice-visible,
+			div.cookie-notice-wrapper,
+			div.cookie-notification-wrapper,
+			div.cookie-on,
+			div.cookie-padding,
+			div.cookie-panel,
+			div.cookie-parent,
+			div.cookie-policy-banner,
+			div.cookie-policy-head,
+			div.cookie-policy-info,
+			div.cookie-policy-info--center,
+			div.cookie-policy-open,
+			div.cookie-preferences-banner,
+			div.cookie-reminder,
+			div.cookie-show,
+			div.cookie-visible,
+			div.cookie-warn,
+			div.cookieBackgaround,
+			div.cookieBanner,
+			div.cookieBar,
+			div.cookieConsent,
+			div.cookieDisclaimer,
+			div.cookieInfo,
+			div.cookieMessage,
+			div.cookieMsg,
+			div.cookieNav,
+			div.cookiePolicy,
+			div.cookiePop,
+			div.cookiePrompt,
+			div.cookieTextsWrapper,
+			div.cookie__alert,
+			div.cookie__backdrop,
+			div.cookie__compliance,
+			div.cookie__disclaimer,
+			div.cookie__layer,
+			div.cookie__notice,
+			div.cookie__popup,
+			div.cookie_agree,
+			div.cookie_agree_wrap,
+			div.cookie_alarm,
+			div.cookie_head,
+			div.cookie_header,
+			div.cookie_msg,
+			div.cookie_text,
+			div.cookie_visible,
+			div.cookiebackground,
+			div.cookiebanner,
+			div.cookiebox,
+			div.cookieconfirm,
+			div.cookieconsent,
+			div.cookieholder,
+			div.cookiehtml,
+			div.cookienotice,
+			div.cookiepop,
+			div.cookieprompt,
+			div.cookies--visible,
+			div.cookies-body,
+			div.cookies-btm,
+			div.cookies-consent,
+			div.cookies-cont,
+			div.cookies-fixed,
+			div.cookies-message,
+			div.cookies-notice,
+			div.cookies-pan,
+			div.cookies-parent,
+			div.cookies-pop,
+			div.cookies-splash,
+			div.cookiesAcceptance,
+			div.cookiesBanner,
+			div.cookies__alert,
+			div.cookies__first,
+			div.cookies__outer,
+			div.cookies_banner,
+			div.cookies_design,
+			div.cookies_open,
+			div.cookies_panel,
+			div.cookies_pop,
+			div.cookiescreen,
+			div.cookiesection,
+			div.cookiespace,
+			div.cookiesplace,
+			div.cookiestatement,
+			div.cookieswindow,
+			div.dev-cookie,
+			div.dp--cookie-consent,
+			div.edu-modal-cookie,
+			div.eu-cookie,
+			div.eu-overlay,
+			div.eu_cookie,
+			div.euconsent,
+			div.ezmob-footer,
+			div.gdpr-bottom,
+			div.gdpr-confirm,
+			div.gdpr-cookie,
+			div.gdpr-cookieconsent-container,
+			div.gdpr-cookieconsent-overlay,
+			div.gdpr-cookieconsent-settings,
+			div.gdpr-popup-border,
+			div.gdpr-show,
+			div.gdpr-wrapper,
+			div.gdprWrapper,
+			div.grid-cookie,
+			div.i-cookie,
+			div.is-cookie,
+			div.is-cookies,
+			div.js-cookie-consent-overlay,
+			div.js-cookie-note,
+			div.js-cookie-note--overlay,
+			div.js-cookie-template,
+			div.layer_cookies,
+			div.layout-cookie,
+			div.lgpd-popup,
+			div.lgpd-warning,
+			div.messagecookies,
+			div.mod_cookies,
+			div.msgCookie,
+			div.notice--cookie,
+			div.notificationpopup,
+			div.nwm-cookies,
+			div.pageCookie,
+			div.pagecookies,
+			div.panelCookies,
+			div.popUpCookies,
+			div.popupcookies,
+			div.privacy-consent,
+			div.privacy-info,
+			div.privacy-message,
+			div.privacy-module,
+			div.privacy-note,
+			div.privacy-overlay,
+			div.privacy-police,
+			div.privacy-popup-container,
+			div.section--cookie,
+			div.section-gdpr,
+			div.show-cookie-box,
+			div.show-cookie-consent,
+			div.show-cookie-policy,
+			div.show-cookies,
+			div.site-cookie,
+			div.sqs-cookie-banner-v2,
+			div.w-cookie,
+			div[data-cookie-disclaimer],
+			form.cookie-bar--fluid,
+			form.cookieBanner,
+			nav.cookie-consent-banner,
+			p.alert-cookie,
+			section#accept-cookie-container,
+			section#tracking-consent-dialog,
+			section.Cookie-notice,
+			section.c-cookie,
+			section.c-cookieconsent,
+			section.c-cookies,
+			section.cookie-alert,
+			section.cookie-bar,
+			section.cookie-consent,
+			section.cookie-message,
+			section.cookie-popup,
+			section.cookie__privacy,
+			section.cookies_banner,
+			div.amgdprcookie-modal-container,
+			div.ammodals-overlay,
+			footer > .CookieConsent,
+			header > .CookieConsent,
+			div.cookie-consent--visible,
+			section.cookie-consent--visible,
+			[class^="cookieBox-"],
+			body.sliding-popup-processed > #sliding-popup,
+			header > #notify-bar,
+			div > #cnsh[style="display: block;"],
+			div[style="min-width: 750px;"] > .gb_wb,
+			div[style*="box-shadow: rgb(136, 136, 136) 0px 0px 12px; color: "] {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-cy="cookie-banner"],
+			app-cookie-warning,
+			app-cookies,
+			div[data-gdpr-consent-prompt],
+			div[data-testid="cookie-policy-banner"],
+			sibbo-cmp-layout,
+			thor-cookies,
+			div#__tealiumGDPRecModal,
+			div#cmp-app-container,
+			div#cookie-popup,
+			div#cookieConsentModal,
+			div#privacy_policy,
+			div.c-cookies,
+			div.ccpa-message,
+			div.cnil,
+			div.cookie-banner,
+			div.cookie-bar,
+			div.cookie-confirm,
+			div.cookie-consent,
+			div.cookie-consent-banner,
+			div.cookie-consent-modal,
+			div.cookie-consent-popup,
+			div.cookie-container,
+			div.cookie-content,
+			div.cookie-disclaimer,
+			div.cookie-layer,
+			div.cookie-notice,
+			div.cookie-notification,
+			div.cookie-overlay,
+			div.cookie-policy,
+			div.cookie-popup,
+			div.cookie-wrapper,
+			div.cookieHolder,
+			div.cookie_popup,
+			div.cookiebar,
+			div.cookies-banner,
+			div.cookies-modal-container,
+			div.cookies-visible,
+			div.eupopup,
+			div.gdpr,
+			div.js-disclaimer,
+			div.privacy-modal,
+			div.privacy-notice,
+			div.privacy_prompt,
+			div.v-cookie,
+			div.with-cookie,
+			section.cookie-banner {
+				display: none !important;
+			}
+		</style>
+		<script type="text/javascript">
+			if (
+				[
+					"/betbuilder/",
+					"/criar-aposta/",
+					"/betcombo/",
+					"/matchcombo/",
+				].some((v) => window.location.href.includes(v))
+			) {
+				document
+					.querySelector('meta[name="robots"]')
+					.setAttribute("content", "noindex, nofollow");
+			}
+		</script>
+		<meta
+			name="apple-itunes-app"
+			content="app-id=1105421899, app-argument=https://www.betano.ng/"
+		/>
+		<meta name="AffiliateID" content="27275" />
+		<meta name="LinkID" content="2616" />
+		<meta property="fb:app_id" content="1164227746952505" />
+		<link rel="preconnect" href="https://www.googletagmanager.com/" />
+		<link rel="preconnect" href="https://static.gmlinteractive.com/" />
+		<link
+			rel="preconnect"
+			href="https://static.gmlinteractive.com/"
+			crossorigin=""
+		/>
+		<link rel="preconnect" href="https://www.betano.ng/" />
+		<link rel="preconnect" href="https://cov.gmlinteractive.com/" />
+
+		<meta name="keywords" content=" " />
+		<meta
+			name="description"
+			content="Secure Online Betting with fast withdrawals and Cash Out*. Great Odds at Live Betting with Live Streaming* and Live Scores! *T&amp;Cs apply."
+		/>
+		<link rel="canonical" href="https://www.betano.ng/" />
+
+		<link
+			rel="alternate"
+			href="https://www.stoiximan.gr/"
+			hreflang="el-GR"
+		/>
+		<link
+			rel="alternate"
+			href="https://en.stoiximan.gr/"
+			hreflang="en-GR"
+		/>
+		<link
+			rel="alternate"
+			href="https://www.stoiximan.com.cy/"
+			hreflang="el-CY"
+		/>
+		<link
+			rel="alternate"
+			href="https://en.stoiximan.com.cy/"
+			hreflang="en-CY"
+		/>
+		<link rel="alternate" href="https://www.betano.de/" hreflang="de-DE" />
+		<link
+			rel="alternate"
+			href="https://www.betano.de/en/"
+			hreflang="en-DE"
+		/>
+		<link rel="alternate" href="https://ro.betano.com/" hreflang="ro-RO" />
+		<link rel="alternate" href="https://www.betano.pt/" hreflang="pt-PT" />
+		<link
+			rel="alternate"
+			href="https://www.betano.com/"
+			hreflang="x-default"
+		/>
+		<link
+			rel="alternate"
+			href="https://br.betano.com/en/"
+			hreflang="en-BR"
+		/>
+		<link rel="alternate" href="https://br.betano.com/" hreflang="pt-BR" />
+		<link
+			rel="alternate"
+			href="https://www.betano.bg/en/"
+			hreflang="en-BG"
+		/>
+		<link rel="alternate" href="https://www.betano.bg/" hreflang="bg-BG" />
+		<link
+			rel="alternate"
+			href="https://www.betano.cz/en/"
+			hreflang="en-CZ"
+		/>
+		<link rel="alternate" href="https://www.betano.cz/" hreflang="cs-CZ" />
+		<link
+			rel="alternate"
+			href="https://lat.betano.com/en/"
+			hreflang="en-CL"
+		/>
+		<link rel="alternate" href="https://lat.betano.com/" hreflang="es-CL" />
+		<link
+			rel="alternate"
+			href="https://www.betano.pe/en/"
+			hreflang="en-PE"
+		/>
+		<link rel="alternate" href="https://www.betano.pe/" hreflang="es-PE" />
+		<link
+			rel="alternate"
+			href="https://ec.betano.com/en/"
+			hreflang="en-EC"
+		/>
+		<link rel="alternate" href="https://ec.betano.com/" hreflang="es-EC" />
+		<link rel="alternate" href="https://www.betano.ca/" hreflang="en-CA" />
+		<link rel="alternate" href="https://www.betano.ng/" hreflang="en-NG" />
+		<link
+			rel="alternate"
+			href="https://www.betano.mx/en/"
+			hreflang="en-MX"
+		/>
+		<link rel="alternate" href="https://www.betano.mx/" hreflang="es-MX" />
+		<link
+			rel="alternate"
+			href="https://www.betano.bet.ar/en/"
+			hreflang="en-AR"
+		/>
+		<link
+			rel="alternate"
+			href="https://www.betano.bet.ar/"
+			hreflang="es-AR"
+		/>
+		<link
+			rel="alternate"
+			href="https://www.betano.co.uk/"
+			hreflang="en-GB"
+		/>
+
+		<style>
+			:root {
+				--brand-primary-color: #ff6600;
+				--brand-primary-color-light: #ffefe3;
+				--brand-primary-color-dark: #c05707;
+				--brand-primary-hover-color: #c74f00;
+				--brand-primary-color-hsl: hsl(24deg 100% 50%);
+				--brand-primary-color-h: 24;
+				--brand-primary-color-s: 100%;
+				--brand-primary-color-l: 50%;
+				--brand-secondary-color: #38a35e;
+				--brand-secondary-color-hsl: hsl(141deg 49% 43%);
+				--brand-secondary-color-h: 141;
+				--brand-secondary-color-s: 49%;
+				--brand-secondary-color-l: 43%;
+				--brand-bottom-nav-color-light: #ffebe5;
+				--brand-bottom-nav-color-emphasis: #cc3000;
+				--brand-bottom-nav-color-casino: #ff3c00;
+			}
+		</style>
+
+		<title>My Bets | Betano</title>
+
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="https://www.betano.ng/assets/static/favicons/betano/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="https://www.betano.ng/assets/static/favicons/betano/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="https://www.betano.ng/assets/static/favicons/betano/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="https://www.betano.ng/assets/static/favicons/betano/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="https://www.betano.ng/assets/static/favicons/betano/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="https://www.betano.ng/assets/static/favicons/betano/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="https://www.betano.ng/assets/static/favicons/betano/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="https://www.betano.ng/assets/static/favicons/betano/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="https://www.betano.ng/assets/static/favicons/betano/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="https://www.betano.ng/assets/static/favicons/betano/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="https://www.betano.ng/assets/static/favicons/betano/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="https://www.betano.ng/assets/static/favicons/betano/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="https://www.betano.ng/assets/static/favicons/betano/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="https://www.betano.ng/manifest.json" />
+		<meta name="msapplication-TileColor" content="#101419" />
+		<meta
+			name="msapplication-TileImage"
+			content="https://www.betano.ng/assets/static/favicons/betano/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#000000" />
+
+		<meta
+			property="og:image"
+			content="https://www.betano.ng/assets/static/images/share/share_betano.png"
+		/>
+
+		<meta name="google" content="notranslate" />
+
+		<meta name="mobile-web-app-capable" content="yes" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+		<script type="application/ld+json">
+			{"@context":"http://schema.org","@type":"SportsEvent","name":"Deportivo Alaves - Girona FC","startDate":"2024-05-10T19:00:00Z","url":"https://www.betano.ng/match-odds/deportivo-alaves-girona-fc/48113631/","location":{"@type":"Place","name":"LaLiga","address":"LaLiga"},"homeTeam":{"@type":"SportsTeam","name":"Deportivo Alaves"},"awayTeam":{"@type":"SportsTeam","name":"Girona FC"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Frosinone - Inter Milan","startDate":"2024-05-10T18:45:00Z","url":"https://www.betano.ng/match-odds/frosinone-inter-milan/48539652/","location":{"@type":"Place","name":"Serie A","address":"Serie A"},"homeTeam":{"@type":"SportsTeam","name":"Frosinone"},"awayTeam":{"@type":"SportsTeam","name":"Inter Milan"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"FC Augsburg - VfB Stuttgart","startDate":"2024-05-10T18:30:00Z","url":"https://www.betano.ng/match-odds/fc-augsburg-vfb-stuttgart/48068653/","location":{"@type":"Place","name":"Bundesliga","address":"Bundesliga"},"homeTeam":{"@type":"SportsTeam","name":"FC Augsburg"},"awayTeam":{"@type":"SportsTeam","name":"VfB Stuttgart"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"OGC Nice - Le Havre AC","startDate":"2024-05-10T19:00:00Z","url":"https://www.betano.ng/match-odds/ogc-nice-le-havre-ac/47763759/","location":{"@type":"Place","name":"Ligue 1","address":"Ligue 1"},"homeTeam":{"@type":"SportsTeam","name":"OGC Nice"},"awayTeam":{"@type":"SportsTeam","name":"Le Havre AC"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Stade Brestois 29 - Stade Reims","startDate":"2024-05-10T19:00:00Z","url":"https://www.betano.ng/match-odds/stade-brestois-29-stade-reims/47945968/","location":{"@type":"Place","name":"Ligue 1","address":"Ligue 1"},"homeTeam":{"@type":"SportsTeam","name":"Stade Brestois 29"},"awayTeam":{"@type":"SportsTeam","name":"Stade Reims"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Shanghai Port - Changchun Yatai","startDate":"2024-05-10T12:00:00Z","url":"https://www.betano.ng/match-odds/shanghai-port-changchun-yatai/45396367/","location":{"@type":"Place","name":"Super League","address":"Super League"},"homeTeam":{"@type":"SportsTeam","name":"Shanghai Port"},"awayTeam":{"@type":"SportsTeam","name":"Changchun Yatai"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Willem II Tilburg - SC Telstar","startDate":"2024-05-10T18:00:00Z","url":"https://www.betano.ng/match-odds/willem-ii-tilburg-sc-telstar/48736533/","location":{"@type":"Place","name":"Eerste Divisie","address":"Eerste Divisie"},"homeTeam":{"@type":"SportsTeam","name":"Willem II Tilburg"},"awayTeam":{"@type":"SportsTeam","name":"SC Telstar"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Como 1907 - Cosenza Calcio","startDate":"2024-05-10T18:30:00Z","url":"https://www.betano.ng/match-odds/como-1907-cosenza-calcio/47206616/","location":{"@type":"Place","name":"Serie B","address":"Serie B"},"homeTeam":{"@type":"SportsTeam","name":"Como 1907"},"awayTeam":{"@type":"SportsTeam","name":"Cosenza Calcio"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Minnesota Timberwolves - Denver Nuggets","startDate":"2024-05-11T01:30:00Z","url":"https://www.betano.ng/match-odds/minnesota-timberwolves-denver-nuggets/48881545/","location":{"@type":"Place","name":"NBA","address":"NBA"},"homeTeam":{"@type":"SportsTeam","name":"Minnesota Timberwolves"},"awayTeam":{"@type":"SportsTeam","name":"Denver Nuggets"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Indiana Pacers - New York Knicks","startDate":"2024-05-10T23:00:00Z","url":"https://www.betano.ng/match-odds/indiana-pacers-new-york-knicks/48965080/","location":{"@type":"Place","name":"NBA","address":"NBA"},"homeTeam":{"@type":"SportsTeam","name":"Indiana Pacers"},"awayTeam":{"@type":"SportsTeam","name":"New York Knicks"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Antibes Sharks - Boulazac Dordogne Pro","startDate":"2024-05-10T18:00:00Z","url":"https://www.betano.ng/match-odds/antibes-sharks-boulazac-dordogne-pro/48712692/","location":{"@type":"Place","name":"Pro B","address":"Pro B"},"homeTeam":{"@type":"SportsTeam","name":"Antibes Sharks"},"awayTeam":{"@type":"SportsTeam","name":"Boulazac Dordogne Pro"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Denain - ASA BC","startDate":"2024-05-10T18:00:00Z","url":"https://www.betano.ng/match-odds/denain-asa-bc/48712623/","location":{"@type":"Place","name":"Pro B","address":"Pro B"},"homeTeam":{"@type":"SportsTeam","name":"Denain"},"awayTeam":{"@type":"SportsTeam","name":"ASA BC"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Partenope Sant' Antimo - Roseto Sharks","startDate":"2024-05-10T18:30:00Z","url":"https://www.betano.ng/match-odds/partenope-sant-antimo-roseto-sharks/48668361/","location":{"@type":"Place","name":"Serie B","address":"Serie B"},"homeTeam":{"@type":"SportsTeam","name":"Partenope Sant' Antimo"},"awayTeam":{"@type":"SportsTeam","name":"Roseto Sharks"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Virtus Arechi Salerno - Aurora Desio","startDate":"2024-05-10T18:30:00Z","url":"https://www.betano.ng/match-odds/virtus-arechi-salerno-aurora-desio/48669820/","location":{"@type":"Place","name":"Serie B","address":"Serie B"},"homeTeam":{"@type":"SportsTeam","name":"Virtus Arechi Salerno"},"awayTeam":{"@type":"SportsTeam","name":"Aurora Desio"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Scandone Avellino - San Vendemiano","startDate":"2024-05-10T18:30:00Z","url":"https://www.betano.ng/match-odds/scandone-avellino-san-vendemiano/48668360/","location":{"@type":"Place","name":"Serie B","address":"Serie B"},"homeTeam":{"@type":"SportsTeam","name":"Scandone Avellino"},"awayTeam":{"@type":"SportsTeam","name":"San Vendemiano"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Andrea Costa Imola - Pielle Livorno","startDate":"2024-05-10T18:30:00Z","url":"https://www.betano.ng/match-odds/andrea-costa-imola-pielle-livorno/48668359/","location":{"@type":"Place","name":"Serie B","address":"Serie B"},"homeTeam":{"@type":"SportsTeam","name":"Andrea Costa Imola"},"awayTeam":{"@type":"SportsTeam","name":"Pielle Livorno"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Yannick Hanfmann - Alejandro Tabilo","startDate":"2024-05-10T13:15:00Z","url":"https://www.betano.ng/match-odds/yannick-hanfmann-alejandro-tabilo/48936095/","location":{"@type":"Place","name":"Rome Masters","address":"Rome Masters"},"homeTeam":{"@type":"SportsTeam","name":"Yannick Hanfmann"},"awayTeam":{"@type":"SportsTeam","name":"Alejandro Tabilo"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Jordan Thompson - Thiago Moura Monteiro","startDate":"2024-05-10T12:15:00Z","url":"https://www.betano.ng/match-odds/jordan-thompson-thiago-moura-monteiro/48942055/","location":{"@type":"Place","name":"Rome Masters","address":"Rome Masters"},"homeTeam":{"@type":"SportsTeam","name":"Jordan Thompson"},"awayTeam":{"@type":"SportsTeam","name":"Thiago Moura Monteiro"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Flavio Cobolli - Sebastian Korda","startDate":"2024-05-10T12:15:00Z","url":"https://www.betano.ng/match-odds/flavio-cobolli-sebastian-korda/48941279/","location":{"@type":"Place","name":"Rome Masters","address":"Rome Masters"},"homeTeam":{"@type":"SportsTeam","name":"Flavio Cobolli"},"awayTeam":{"@type":"SportsTeam","name":"Sebastian Korda"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Tallon Griekspoor - Francesco Passaro","startDate":"2024-05-10T13:30:00Z","url":"https://www.betano.ng/match-odds/tallon-griekspoor-francesco-passaro/48981882/","location":{"@type":"Place","name":"Rome Masters","address":"Rome Masters"},"homeTeam":{"@type":"SportsTeam","name":"Tallon Griekspoor"},"awayTeam":{"@type":"SportsTeam","name":"Francesco Passaro"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Alexander Zverev - Aleksandar Vukic","startDate":"2024-05-10T12:15:00Z","url":"https://www.betano.ng/match-odds/alexander-zverev-aleksandar-vukic/48949421/","location":{"@type":"Place","name":"Rome Masters","address":"Rome Masters"},"homeTeam":{"@type":"SportsTeam","name":"Alexander Zverev"},"awayTeam":{"@type":"SportsTeam","name":"Aleksandar Vukic"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Miomir Kecmanovic - Casper Ruud","startDate":"2024-05-10T13:25:00Z","url":"https://www.betano.ng/match-odds/miomir-kecmanovic-casper-ruud/48990251/","location":{"@type":"Place","name":"Rome Masters","address":"Rome Masters"},"homeTeam":{"@type":"SportsTeam","name":"Miomir Kecmanovic"},"awayTeam":{"@type":"SportsTeam","name":"Casper Ruud"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Novak Djokovic - Corentin Moutet","startDate":"2024-05-10T17:00:00Z","url":"https://www.betano.ng/match-odds/novak-djokovic-corentin-moutet/48990678/","location":{"@type":"Place","name":"Rome Masters","address":"Rome Masters"},"homeTeam":{"@type":"SportsTeam","name":"Novak Djokovic"},"awayTeam":{"@type":"SportsTeam","name":"Corentin Moutet"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Francisco Cerundolo - Matteo Gigante","startDate":"2024-05-10T14:50:00Z","url":"https://www.betano.ng/match-odds/francisco-cerundolo-matteo-gigante/48989578/","location":{"@type":"Place","name":"Rome Masters","address":"Rome Masters"},"homeTeam":{"@type":"SportsTeam","name":"Francisco Cerundolo"},"awayTeam":{"@type":"SportsTeam","name":"Matteo Gigante"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Astralis - Team Liquid","startDate":"2024-05-10T14:15:00Z","url":"https://www.betano.ng/match-odds/astralis-team-liquid/48950319/","location":{"@type":"Place","name":"ESL Pro League","address":"ESL Pro League"},"homeTeam":{"@type":"SportsTeam","name":"Astralis"},"awayTeam":{"@type":"SportsTeam","name":"Team Liquid"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Team Vitality - FaZe Clan","startDate":"2024-05-10T17:30:00Z","url":"https://www.betano.ng/match-odds/team-vitality-faze-clan/48955759/","location":{"@type":"Place","name":"ESL Pro League","address":"ESL Pro League"},"homeTeam":{"@type":"SportsTeam","name":"Team Vitality"},"awayTeam":{"@type":"SportsTeam","name":"FaZe Clan"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Static - Nordix Esport","startDate":"2024-05-10T16:00:00Z","url":"https://www.betano.ng/match-odds/static-nordix-esport/48990836/","location":{"@type":"Place","name":"Telia League","address":"Telia League"},"homeTeam":{"@type":"SportsTeam","name":"Static"},"awayTeam":{"@type":"SportsTeam","name":"Nordix Esport"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"777 - Metizport X","startDate":"2024-05-11T16:00:00Z","url":"https://www.betano.ng/match-odds/777-metizport-x/48856900/","location":{"@type":"Place","name":"Telia League","address":"Telia League"},"homeTeam":{"@type":"SportsTeam","name":"777"},"awayTeam":{"@type":"SportsTeam","name":"Metizport X"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Fnatic - Team Liquid","startDate":"2024-05-11T04:00:00Z","url":"https://www.betano.ng/match-odds/fnatic-team-liquid/48939377/","location":{"@type":"Place","name":"Mid-Season Invitational","address":"Mid-Season Invitational"},"homeTeam":{"@type":"SportsTeam","name":"Fnatic"},"awayTeam":{"@type":"SportsTeam","name":"Team Liquid"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Gen.G - Top Esports","startDate":"2024-05-11T09:00:00Z","url":"https://www.betano.ng/match-odds/gen-g-top-esports/48939376/","location":{"@type":"Place","name":"Mid-Season Invitational","address":"Mid-Season Invitational"},"homeTeam":{"@type":"SportsTeam","name":"Gen.G"},"awayTeam":{"@type":"SportsTeam","name":"Top Esports"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"MOUZ - Complexity","startDate":"2024-05-11T14:15:00Z","url":"https://www.betano.ng/match-odds/mouz-complexity/48999025/","location":{"@type":"Place","name":"ESL Pro League","address":"ESL Pro League"},"homeTeam":{"@type":"SportsTeam","name":"MOUZ"},"awayTeam":{"@type":"SportsTeam","name":"Complexity"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Infurity Gaming - Wizard","startDate":"2024-05-10T16:00:00Z","url":"https://www.betano.ng/match-odds/infurity-gaming-wizard/48990837/","location":{"@type":"Place","name":"Telia League","address":"Telia League"},"homeTeam":{"@type":"SportsTeam","name":"Infurity Gaming"},"awayTeam":{"@type":"SportsTeam","name":"Wizard"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Grottazzolina - Ravenna","startDate":"2024-05-11T15:00:00Z","url":"https://www.betano.ng/match-odds/grottazzolina-ravenna/48898564/","location":{"@type":"Place","name":"Coppa Italia A2","address":"Coppa Italia A2"},"homeTeam":{"@type":"SportsTeam","name":"Grottazzolina"},"awayTeam":{"@type":"SportsTeam","name":"Ravenna"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Estonia (W) - Latvia (W)","startDate":"2024-05-10T16:00:00Z","url":"https://www.betano.ng/match-odds/estonia-w-latvia-w/48988985/","location":{"@type":"Place","name":"Country Friendlies (W)","address":"Country Friendlies (W)"},"homeTeam":{"@type":"SportsTeam","name":"Estonia (W)"},"awayTeam":{"@type":"SportsTeam","name":"Latvia (W)"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Brescia - Porto Viro","startDate":"2024-05-11T17:30:00Z","url":"https://www.betano.ng/match-odds/brescia-porto-viro/48898565/","location":{"@type":"Place","name":"Coppa Italia A2","address":"Coppa Italia A2"},"homeTeam":{"@type":"SportsTeam","name":"Brescia"},"awayTeam":{"@type":"SportsTeam","name":"Porto Viro"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Poland (W) - Netherlands (W)","startDate":"2024-05-10T16:30:00Z","url":"https://www.betano.ng/match-odds/poland-w-netherlands-w/48994517/","location":{"@type":"Place","name":"Country Friendlies (W)","address":"Country Friendlies (W)"},"homeTeam":{"@type":"SportsTeam","name":"Poland (W)"},"awayTeam":{"@type":"SportsTeam","name":"Netherlands (W)"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Germany (W) - Romania (W)","startDate":"2024-05-10T17:30:00Z","url":"https://www.betano.ng/match-odds/germany-w-romania-w/48988986/","location":{"@type":"Place","name":"Country Friendlies (W)","address":"Country Friendlies (W)"},"homeTeam":{"@type":"SportsTeam","name":"Germany (W)"},"awayTeam":{"@type":"SportsTeam","name":"Romania (W)"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"IK Savehof (W) - Skara Hf (W)","startDate":"2024-05-11T12:00:00Z","url":"https://www.betano.ng/match-odds/ik-savehof-w-skara-hf-w/48753476/","location":{"@type":"Place","name":"Elitserien (W)","address":"Elitserien (W)"},"homeTeam":{"@type":"SportsTeam","name":"IK Savehof (W)"},"awayTeam":{"@type":"SportsTeam","name":"Skara Hf (W)"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Omron (W) - Hokkoku Honey Bee (W)","startDate":"2024-05-11T04:30:00Z","url":"https://www.betano.ng/match-odds/omron-w-hokkoku-honey-bee-w/48974863/","location":{"@type":"Place","name":"JHL (W)","address":"JHL (W)"},"homeTeam":{"@type":"SportsTeam","name":"Omron (W)"},"awayTeam":{"@type":"SportsTeam","name":"Hokkoku Honey Bee (W)"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"CS Rapid Bucuresti (W) - SCM Craiova (W)","startDate":"2024-05-10T14:00:00Z","url":"https://www.betano.ng/match-odds/cs-rapid-bucuresti-w-scm-craiova-w/48796175/","location":{"@type":"Place","name":"Liga Nationala (W)","address":"Liga Nationala (W)"},"homeTeam":{"@type":"SportsTeam","name":"CS Rapid Bucuresti (W)"},"awayTeam":{"@type":"SportsTeam","name":"SCM Craiova (W)"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Serbia U20 - Croatia U20","startDate":"2024-05-10T16:00:00Z","url":"https://www.betano.ng/match-odds/serbia-u20-croatia-u20/48945703/","location":{"@type":"Place","name":"Country Friendlies U20","address":"Country Friendlies U20"},"homeTeam":{"@type":"SportsTeam","name":"Serbia U20"},"awayTeam":{"@type":"SportsTeam","name":"Croatia U20"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"CS Gloria Bistrita-Nasaud (W) - HC Dunarea Braila (W)","startDate":"2024-05-11T13:00:00Z","url":"https://www.betano.ng/match-odds/cs-gloria-bistrita-nasaud-w-hc-dunarea-braila-w/48813218/","location":{"@type":"Place","name":"EHF European League (W)","address":"EHF European League (W)"},"homeTeam":{"@type":"SportsTeam","name":"CS Gloria Bistrita-Nasaud (W)"},"awayTeam":{"@type":"SportsTeam","name":"HC Dunarea Braila (W)"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"BM Porrino (W) - Aula Cultural (W)","startDate":"2024-05-10T14:00:00Z","url":"https://www.betano.ng/match-odds/bm-porrino-w-aula-cultural-w/48974579/","location":{"@type":"Place","name":"Copa de la Reina (W)","address":"Copa de la Reina (W)"},"homeTeam":{"@type":"SportsTeam","name":"BM Porrino (W)"},"awayTeam":{"@type":"SportsTeam","name":"Aula Cultural (W)"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Storhamar HE (W) - Neptunes de Nantes (W)","startDate":"2024-05-11T16:00:00Z","url":"https://www.betano.ng/match-odds/storhamar-he-w-neptunes-de-nantes-w/48813231/","location":{"@type":"Place","name":"EHF European League (W)","address":"EHF European League (W)"},"homeTeam":{"@type":"SportsTeam","name":"Storhamar HE (W)"},"awayTeam":{"@type":"SportsTeam","name":"Neptunes de Nantes (W)"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"OGC Nice Cote DAzur (W) - JDA Bourgogne Dijon (W)","startDate":"2024-05-10T18:30:00Z","url":"https://www.betano.ng/match-odds/ogc-nice-cote-dazur-w-jda-bourgogne-dijon-w/48753879/","location":{"@type":"Place","name":"LFH Division 1 (W)","address":"LFH Division 1 (W)"},"homeTeam":{"@type":"SportsTeam","name":"OGC Nice Cote DAzur (W)"},"awayTeam":{"@type":"SportsTeam","name":"JDA Bourgogne Dijon (W)"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Arlington Renegades - Memphis Showboats","startDate":"2024-05-11T17:00:00Z","url":"https://www.betano.ng/match-odds/arlington-renegades-memphis-showboats/48946035/","location":{"@type":"Place","name":"UFL","address":"UFL"},"homeTeam":{"@type":"SportsTeam","name":"Arlington Renegades"},"awayTeam":{"@type":"SportsTeam","name":"Memphis Showboats"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Birmingham Stallions - St. Louis Battlehawks","startDate":"2024-05-11T20:00:00Z","url":"https://www.betano.ng/match-odds/birmingham-stallions-st-louis-battlehawks/48946042/","location":{"@type":"Place","name":"UFL","address":"UFL"},"homeTeam":{"@type":"SportsTeam","name":"Birmingham Stallions"},"awayTeam":{"@type":"SportsTeam","name":"St. Louis Battlehawks"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Switzerland - Norway","startDate":"2024-05-10T14:20:00Z","url":"https://www.betano.ng/match-odds/switzerland-norway/48544806/","location":{"@type":"Place","name":"World Championship","address":"World Championship"},"homeTeam":{"@type":"SportsTeam","name":"Switzerland"},"awayTeam":{"@type":"SportsTeam","name":"Norway"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Czech Republic - Finland","startDate":"2024-05-10T18:20:00Z","url":"https://www.betano.ng/match-odds/czech-republic-finland/48167062/","location":{"@type":"Place","name":"World Championship","address":"World Championship"},"homeTeam":{"@type":"SportsTeam","name":"Czech Republic"},"awayTeam":{"@type":"SportsTeam","name":"Finland"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Slovakia - Germany","startDate":"2024-05-10T14:20:00Z","url":"https://www.betano.ng/match-odds/slovakia-germany/48544785/","location":{"@type":"Place","name":"World Championship","address":"World Championship"},"homeTeam":{"@type":"SportsTeam","name":"Slovakia"},"awayTeam":{"@type":"SportsTeam","name":"Germany"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Sweden - USA","startDate":"2024-05-10T18:20:00Z","url":"https://www.betano.ng/match-odds/sweden-usa/48544875/","location":{"@type":"Place","name":"World Championship","address":"World Championship"},"homeTeam":{"@type":"SportsTeam","name":"Sweden"},"awayTeam":{"@type":"SportsTeam","name":"USA"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Poland - Latvia","startDate":"2024-05-11T14:20:00Z","url":"https://www.betano.ng/match-odds/poland-latvia/48544878/","location":{"@type":"Place","name":"World Championship","address":"World Championship"},"homeTeam":{"@type":"SportsTeam","name":"Poland"},"awayTeam":{"@type":"SportsTeam","name":"Latvia"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"France - Kazakhstan","startDate":"2024-05-11T10:20:00Z","url":"https://www.betano.ng/match-odds/france-kazakhstan/48544876/","location":{"@type":"Place","name":"World Championship","address":"World Championship"},"homeTeam":{"@type":"SportsTeam","name":"France"},"awayTeam":{"@type":"SportsTeam","name":"Kazakhstan"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Austria - Denmark","startDate":"2024-05-11T14:20:00Z","url":"https://www.betano.ng/match-odds/austria-denmark/48544807/","location":{"@type":"Place","name":"World Championship","address":"World Championship"},"homeTeam":{"@type":"SportsTeam","name":"Austria"},"awayTeam":{"@type":"SportsTeam","name":"Denmark"}},{"@context":"http://schema.org","@type":"SportsEvent","name":"Great Britain - Canada","startDate":"2024-05-11T10:20:00Z","url":"https://www.betano.ng/match-odds/great-britain-canada/46084436/","location":{"@type":"Place","name":"World Championship","address":"World Championship"},"homeTeam":{"@type":"SportsTeam","name":"Great Britain"},"awayTeam":{"@type":"SportsTeam","name":"Canada"}}
+		</script>
+
+		<script type="text/javascript">
+			var optimoveResolve;
+			var optimoveReject;
+
+			var optimovePromise = new Promise((resolve, reject) => {
+				optimoveResolve = resolve;
+				optimoveReject = reject;
+			});
+		</script>
+		<script
+			async=""
+			src="/assets/betano/saved_resource"
+			data-optimove-service-worker-path="/optimove/OptimoveSDKWorker.js"
+			onload="optimoveResolve()"
+			onerror="optimoveReject()"
+		></script>
+
+		<link
+			href="/assets/betano/chunk-vendors~c7bac266.050a1aad600d4f323808.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/assets/betano/chunk-vendors~d939e436.9f9c6fdd8ede38779944.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/assets/betano/chunk-vendors~9c5b28f6.e34129d7e790790cd9c6.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/assets/betano/chunk-vendors~fdc6512a.1f90d171cdcd854adb36.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/assets/betano/main.8021055fd04224191be9.css"
+			rel="stylesheet"
+		/>
+		<style>
+			#optimoveSdkWebTool {
+				width: 0;
+				display: none;
+				position: fixed;
+				right: 0;
+				top: 0;
+				background: #fff;
+				z-index: 1000;
+			}
+
+			#optimoveSdkWebTool.open {
+				max-width: 1500px;
+				min-width: 340px;
+				height: 100vh;
+			}
+
+			#optimoveSdkWebTool.open.ag-theme-balham {
+				width: 500px;
+				display: block;
+				z-index: 10000;
+				-webkit-box-shadow: -3px 0 10px 0 rgba(200, 200, 200, 0.5);
+				box-shadow: -3px 0 10px 0 rgba(200, 200, 200, 0.5);
+			}
+
+			#optimovePanelHead.panel-heading {
+				padding: 16px 15px;
+			}
+
+			#optimovePanelHead .popupDiv {
+				padding-left: 334px;
+				position: relative;
+			}
+
+			#optimovePanelHead .popupDiv .popup {
+				position: absolute;
+				visibility: hidden;
+			}
+
+			#optimovePanelHead .popupDiv .popup.showPopup {
+				visibility: visible;
+				display: block;
+				background: #ffffff 0% 0% no-repeat padding-box;
+				box-shadow: 0px 0px 6px #00000029;
+				border-radius: 4px;
+				opacity: 1;
+				width: 109px;
+				height: 84px;
+				z-index: 1;
+			}
+
+			#optimovePanelHead .popupDiv .popup.showPopup .dockRightPicDiv {
+				height: 28px;
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+
+			#optimovePanelHead
+				.popupDiv
+				.popup.showPopup
+				.dockRightPicDiv
+				.dockText {
+				display: inline;
+				padding-left: 6px;
+			}
+
+			#optimovePanelHead
+				.popupDiv
+				.popup.showPopup
+				.dockRightPicDiv:hover {
+				background-color: #eceff1;
+			}
+
+			#optimovePanelHead .popupDiv .popup.showPopup .dockLeftPicDiv {
+				height: 28px;
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+
+			#optimovePanelHead
+				.popupDiv
+				.popup.showPopup
+				.dockLeftPicDiv
+				.dockText {
+				display: inline;
+				padding-left: 6px;
+			}
+
+			#optimovePanelHead
+				.popupDiv
+				.popup.showPopup
+				.dockLeftPicDiv:hover {
+				background-color: #eceff1;
+			}
+
+			#optimovePanelHead .popupDiv .popup.showPopup .dockBottomPicDiv {
+				height: 28px;
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+
+			#optimovePanelHead
+				.popupDiv
+				.popup.showPopup
+				.dockBottomPicDiv
+				.dockText {
+				display: inline;
+				padding-left: 6px;
+			}
+
+			#optimovePanelHead
+				.popupDiv
+				.popup.showPopup
+				.dockBottomPicDiv:hover {
+				background-color: #eceff1;
+			}
+
+			#optimovePanelHead .popup.popupNotShow {
+				visibility: hidden;
+			}
+
+			#optimovePanelHead .popup.showPopup {
+				visibility: visible;
+				display: block;
+				background: #ffffff 0% 0% no-repeat padding-box;
+				box-shadow: 0px 0px 6px #00000029;
+				border-radius: 4px;
+				opacity: 1;
+				width: 109px;
+				height: 83px;
+			}
+
+			#optimoveSdkWebTool.open.ag-theme-balham .ag-header-cell {
+				padding-right: 0px !important;
+			}
+
+			#optimoveSDKDragger {
+				width: 10px;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: transparent;
+				z-index: 1;
+				cursor: w-resize;
+			}
+
+			#optimoveSdkWebTool .material-icons {
+				cursor: pointer;
+			}
+
+			#optimoveSdkWebTool .ag-root-wrapper.ag-layout-normal {
+				height: calc(100% - 103px);
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham .is-not-main {
+				background-color: #eceff1;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham .errorNotMainRow {
+				background-color: #ffd6c2;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham .ag-header-cell {
+				background-color: #cfd8dc;
+				box-sizing: content-box;
+			}
+
+			#optimoveSdkWebTool .ag-header-cell-text {
+				color: #455a64;
+				text-align: left;
+				font: Bold 12px/14px Roboto;
+				letter-spacing: 0;
+				opacity: 1;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham .ag-cell {
+				text-align: left;
+				font: Regular 12px/14px Roboto;
+				letter-spacing: 0;
+				color: #37474f;
+				opacity: 1;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham .ag-cell .fa-angle-right,
+			#optimoveSdkWebTool.ag-theme-balham .ag-cell .fa-angle-down {
+				width: 18px;
+				height: 18px;
+				padding-right: 10px;
+				color: #37474f;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham
+				.ag-cell
+				.fa-exclamation-circle {
+				padding-right: 20px;
+				width: 16px;
+				height: 17px;
+				color: #ff5500;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham
+				.ag-cell.mainRowClass.optDateCell.optHasError {
+				color: #ff5500;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham
+				.ag-cell.mainRowClass.mainRowClassEventId.optHasError {
+				color: #ff5500;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham
+				.ag-cell.mainRowClass.mainRowClassEventName.optHasError {
+				color: #ff5500;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham .ag-cell.notMainDateRowClass {
+				left: 26px !important;
+				white-space: normal !important;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham
+				.ag-cell.notMainDateRowClass.optParametersWarning {
+				color: #212121 !important;
+				font-weight: bold !important;
+				left: 26px !important;
+			}
+
+			#optimoveSdkWebTool .cell-wrap-text {
+				white-space: normal !important;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham
+				.ag-cell.notMainDateRowClass.optNotExistWarning {
+				left: 26px !important;
+				left: 26px !important;
+				white-space: nowrap !important;
+				color: #cf4500;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham
+				.ag-cell.notMainRowClass.notMainRowClassEventId {
+				left: 160px !important;
+				font-weight: bold;
+				white-space: normal !important;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham
+				.ag-cell.notMainRowClass.notMainRowClassEventId.optHasError {
+				left: 160px !important;
+				font-weight: normal;
+				white-space: normal !important;
+			}
+
+			#optimoveSdkWebTool .ag-overlay-loading-center {
+				text-align: center;
+				font: Bold 24px/28px Roboto;
+				letter-spacing: 0;
+				color: #f2f0f0;
+				opacity: 1;
+			}
+
+			#optimoveSdkWebTool .cell-parameter-value {
+				width: 540px !important;
+			}
+
+			#optimoveSdkWebTool .ag-full-width-row {
+				padding-left: 8px !important;
+				padding-top: 16px !important;
+			}
+
+			#optimoveSdkWebTool .optimoveTopHeadLine {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+			}
+
+			#optimoveSdkWebTool .optimoveTopHeadLine .optimoveWebToolBtnClose {
+				box-shadow: none;
+			}
+
+			#optimoveSdkWebTool
+				.optimoveTopHeadLine
+				.optimoveWebToolBtnClose
+				i {
+				font-size: 17px;
+				color: #5f7c8a;
+			}
+
+			#optimoveSdkWebTool .optimoveTopHeadLine .positionButtonPic {
+				padding-right: 10px;
+			}
+
+			#optimoveSdkWebTool .optimoveTopHeadLineText {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding-left: 8px;
+				color: #424242;
+				text-align: left;
+				font: Light 18px/18px Roboto;
+				letter-spacing: 0;
+				opacity: 1;
+				font-weight: 300;
+				font-size: 18px;
+			}
+
+			#optimoveSdkWebTool .optimoveBottomHeadLineText {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;
+				padding: 10px 0 5px;
+				text-align: left;
+				font: Regular 12px/16px Roboto;
+				letter-spacing: 0;
+				color: #546e7a;
+				opacity: 1;
+			}
+
+			#optimoveSdkWebTool .opvArrowNoParams {
+				visibility: hidden;
+			}
+
+			#optimoveSdkWebTool .btn-link.opt-btn-link {
+				padding-top: 5px;
+				padding-left: 0px;
+				border: 0;
+				cursor: pointer;
+				color: #00aaff;
+				font-size: 12px;
+				font-weight: 700;
+				user-select: none;
+				text-shadow: none;
+				background-color: white !important;
+			}
+
+			#optimoveSdkWebTool .btn-link.opt-btn-link:hover {
+				color: #00699e !important;
+				text-decoration: none;
+			}
+
+			#optimoveSdkWebTool .opt-btn-link.btn-link.disable-btn:hover {
+				color: #b0bec5 !important;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham .ag-header-cell::after,
+			.ag-theme-balham .ag-header-group-cell::after {
+				border-right: none;
+			}
+
+			#optimoveSdkWebTool .ag-row-hover {
+				background-color: #f5f7f7 !important;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham
+				.ag-row-selected.opti-row-class {
+				background-color: white !important;
+				border-color: #d9dcde;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham .ag-root {
+				border: 0px !important;
+			}
+
+			#optimoveSdkWebTool.ag-theme-balham .ag-overlay-loading-center {
+				border: 0px !important;
+			}
+		</style>
+		<script src="/assets/betano/logger-1.min.js" async=""></script>
+		<script
+			charset="utf-8"
+			src="/assets/betano/224.e8ee5874b316a1a7cca9.js"
+		></script>
+		<script
+			charset="utf-8"
+			src="/assets/betano/396.b279a0e69962cf8c8dc0.js"
+		></script>
+		<script
+			charset="utf-8"
+			src="/assets/betano/0.3cf542e95378832a23d7.js"
+		></script>
+		<script
+			charset="utf-8"
+			src="/assets/betano/9.8fb6c6ec6b96946ff793.js"
+		></script>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-ad-name], [data-ad-width], div[aria-label="Ads"], div[data-ad-targeting], div[data-native_ad], div[id^="ad_position_"], div[id^="dfp-ad-"], div[id^="ezoic-pub-ad-"], div[id^="yandex_ad"], ins.adsbygoogle[data-ad-slot], div[id*="ScriptRoot"], a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], amp-embed[type="taboola"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-cy="cookie-banner"],
+			app-cookie-warning,
+			app-cookies,
+			div[data-gdpr-consent-prompt],
+			div[data-testid="cookie-policy-banner"],
+			sibbo-cmp-layout,
+			thor-cookies,
+			div#__tealiumGDPRecModal,
+			div#cmp-app-container,
+			div#cookie-popup,
+			div#cookieConsentModal,
+			div#privacy_policy,
+			div.c-cookies,
+			div.ccpa-message,
+			div.cnil,
+			div.cookie-banner,
+			div.cookie-bar,
+			div.cookie-confirm,
+			div.cookie-consent,
+			div.cookie-consent-banner,
+			div.cookie-consent-modal,
+			div.cookie-consent-popup,
+			div.cookie-container,
+			div.cookie-content,
+			div.cookie-disclaimer,
+			div.cookie-layer,
+			div.cookie-notice,
+			div.cookie-notification,
+			div.cookie-overlay,
+			div.cookie-policy,
+			div.cookie-popup,
+			div.cookie-wrapper,
+			div.cookieHolder,
+			div.cookie_popup,
+			div.cookiebar,
+			div.cookies-banner,
+			div.cookies-modal-container,
+			div.cookies-visible,
+			div.eupopup,
+			div.gdpr,
+			div.js-disclaimer,
+			div.privacy-modal,
+			div.privacy-notice,
+			div.privacy_prompt,
+			div.v-cookie,
+			div.with-cookie,
+			section.cookie-banner {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-ad-name], [data-ad-width], div[aria-label="Ads"], div[data-ad-targeting], div[data-native_ad], div[id^="ad_position_"], div[id^="dfp-ad-"], div[id^="ezoic-pub-ad-"], div[id^="yandex_ad"], ins.adsbygoogle[data-ad-slot], div[id*="ScriptRoot"], a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], amp-embed[type="taboola"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-cy="cookie-banner"],
+			app-cookie-warning,
+			app-cookies,
+			div[data-gdpr-consent-prompt],
+			div[data-testid="cookie-policy-banner"],
+			sibbo-cmp-layout,
+			thor-cookies,
+			div#__tealiumGDPRecModal,
+			div#cmp-app-container,
+			div#cookie-popup,
+			div#cookieConsentModal,
+			div#privacy_policy,
+			div.c-cookies,
+			div.ccpa-message,
+			div.cnil,
+			div.cookie-banner,
+			div.cookie-bar,
+			div.cookie-confirm,
+			div.cookie-consent,
+			div.cookie-consent-banner,
+			div.cookie-consent-modal,
+			div.cookie-consent-popup,
+			div.cookie-container,
+			div.cookie-content,
+			div.cookie-disclaimer,
+			div.cookie-layer,
+			div.cookie-notice,
+			div.cookie-notification,
+			div.cookie-overlay,
+			div.cookie-policy,
+			div.cookie-popup,
+			div.cookie-wrapper,
+			div.cookieHolder,
+			div.cookie_popup,
+			div.cookiebar,
+			div.cookies-banner,
+			div.cookies-modal-container,
+			div.cookies-visible,
+			div.eupopup,
+			div.gdpr,
+			div.js-disclaimer,
+			div.privacy-modal,
+			div.privacy-notice,
+			div.privacy_prompt,
+			div.v-cookie,
+			div.with-cookie,
+			section.cookie-banner {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href*="www.gaming-adult.com/"],
+			[href*="postlnk.com"],
+			[href*="passtechusa.com"] {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			.bar.cookie, .bar.udc-bar-holder, #app > #cookies, #app > .cookie, #app > .cookies, #app > div > .vm--container, [href="https://devowl.io/wordpress-real-cookie-banner/"]
+			{
+				display: none !important;
+			}
+		</style>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/betano/111.d4dab048cd75113f517f.css"
+		/>
+		<script
+			charset="utf-8"
+			src="/assets/betano/111.5ef8d7834e08a962bef3.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/betano/2.31987504b1a810950e09.css"
+		/>
+		<script
+			charset="utf-8"
+			src="/assets/betano/2.e6431375fb65681f2e87.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/betano/3.c05e87c3d89552ebb8da.css"
+		/>
+		<script
+			charset="utf-8"
+			src="/assets/betano/3.32cc2dcd1bc04c8c7ad7.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/betano/68.2cf5357fa88607b502ab.css"
+		/>
+		<script
+			charset="utf-8"
+			src="/assets/betano/68.30f04c72795a9e29e14f.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/betano/14.33bade4cb23a9c23ae24.css"
+		/>
+		<script
+			charset="utf-8"
+			src="/assets/betano/14.861cea57d83a60693ef4.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/betano/128.23a3598bb44b50b16039.css"
+		/>
+		<script
+			charset="utf-8"
+			src="/assets/betano/128.10f68a87dc0e3465e416.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/betano/69.293bdb007e0b3a5b057c.css"
+		/>
+		<script
+			charset="utf-8"
+			src="/assets/betano/69.5db200110f42e060c853.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/betano/140.27568bc9215d32b3d3bb.css"
+		/>
+		<script
+			charset="utf-8"
+			src="/assets/betano/140.1dfb5fb9e3f174fb2445.js"
+		></script>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			.uk-position-fixed.cookies {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			a[href^="https://fc.lc/ref/"], [href*="postlnk.com"], [href*="passtechusa.com"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href="https://devowl.io/wordpress-real-cookie-banner/"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			a[href^="https://fc.lc/ref/"], [href*="postlnk.com"], [href*="passtechusa.com"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href="https://devowl.io/wordpress-real-cookie-banner/"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style>
+			.kumulos-rating {
+				display: flex;
+				height: 20px;
+				font-size: 16px;
+				align-items: center;
+				margin-top: 3px;
+			}
+			.kumulos-rating .kumulos-rating-star {
+				position: relative;
+			}
+			.kumulos-rating .kumulos-rating-star .kumulos-rating-halfstar {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 50%;
+				overflow: hidden;
+			}
+			.kumulos-rating .kumulos-rating-count {
+				font-size: 12px;
+				margin-left: 3px;
+			}
+		</style>
+		<style>
+			@keyframes kumulos-anim-shake {
+				10%,
+				90% {
+					transform: translate3d(-1px, 0, 0);
+				}
+				20%,
+				80% {
+					transform: translate3d(2px, 0, 0);
+				}
+				30%,
+				50%,
+				70% {
+					transform: translate3d(-2px, 0, 0);
+				}
+				40%,
+				60% {
+					transform: translate3d(2px, 0, 0);
+				}
+			}
+			@keyframes kumulos-anim-fade-in {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@keyframes kumulos-reveal-left {
+				0% {
+					opacity: 0;
+					transform: translate(10px, -50%);
+				}
+				100% {
+					opacity: 1;
+					transform: translate(0px, -50%);
+				}
+			}
+			@keyframes kumulos-reveal-right {
+				0% {
+					opacity: 0;
+					transform: translate(-10px, -50%);
+				}
+				100% {
+					opacity: 1;
+					transform: translate(0px, -50%);
+				}
+			}
+			@keyframes kumulos-toast-in-out {
+				0% {
+					opacity: 0;
+					transform: translate3d(-50%, 100%, 0);
+				}
+				100% {
+					opacity: 1;
+					transform: translate3d(-50%, 0, 0);
+				}
+			}
+			@keyframes kumulos-slide-down {
+				0% {
+					transform: translate3d(0, -100%, 0);
+				}
+				100% {
+					transform: translate3d(0, 0, 0);
+				}
+			}
+			@keyframes kumulos-slide-up {
+				0% {
+					transform: translate3d(0, 100%, 0);
+				}
+				100% {
+					transform: translate3d(0, 0, 0);
+				}
+			}
+			.kumulos-tooltip-parent .kumulos-tooltip {
+				display: none;
+			}
+			.kumulos-tooltip-parent:hover .kumulos-tooltip {
+				display: block;
+			}
+			.kumulos-tooltip {
+				background: #222;
+				position: absolute;
+				top: 50%;
+				padding: 8px 12px;
+				font: 14px helvetica, sans-serif;
+				color: #eee;
+				border-radius: 6px;
+				white-space: nowrap;
+				z-index: 1100;
+				pointer-events: none;
+				transform: translateY(-50%);
+				will-change: opacity, transform;
+			}
+			.kumulos-tooltip:after {
+				content: "";
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: 50%;
+				right: 100%;
+				border: solid transparent;
+				border-width: 8px;
+				margin-top: -8px;
+			}
+			.kumulos-tooltip-right {
+				left: calc(100% + 12px);
+				animation: kumulos-reveal-right 0.2s
+					cubic-bezier(0.23, 1, 0.32, 1);
+			}
+			.kumulos-tooltip-right:after {
+				border-right-color: #222;
+				right: 100%;
+			}
+			.kumulos-tooltip-left {
+				right: calc(100% + 12px);
+				animation: kumulos-reveal-left 0.2s
+					cubic-bezier(0.23, 1, 0.32, 1);
+			}
+			.kumulos-tooltip-left:after {
+				border-left-color: #222;
+				left: 100%;
+			}
+			.kumulos-toast {
+				display: inline-block;
+				position: fixed;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				background: #222;
+				z-index: 1100;
+				padding: 12px;
+				font-size: 16px;
+				font-family: helvetica, sans-serif;
+				color: #eee;
+				border-radius: 8px 8px 0 0;
+				animation: kumulos-toast-in-out 0.25s
+					cubic-bezier(0.23, 1, 0.32, 1);
+			}
+			.kumulos-prompt {
+				box-sizing: border-box;
+				z-index: 1000;
+			}
+			.kumulos-prompt *,
+			.kumulos-prompt *:before,
+			.kumulos-prompt *:after {
+				box-sizing: inherit;
+			}
+			.kumulos-action-button {
+				border: none;
+				margin-left: 10px;
+				padding: 7px 10px;
+				min-width: 100px;
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.kumulos-action-button:hover {
+				cursor: pointer;
+			}
+			.kumulos-action-button-cancel {
+				background: none;
+				color: #555;
+			}
+			.kumulos-action-button-cancel:hover {
+				background: #eee;
+			}
+			.kumulos-action-button-confirm {
+				border-radius: 3px;
+				box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.54);
+				background: #4c88e0;
+				color: #fff;
+			}
+			.kumulos-action-button-confirm:hover {
+				opacity: 0.8;
+			}
+			.kumulos-checkbox-container {
+				display: block;
+				position: relative;
+				padding-left: 30px;
+				margin-bottom: 12px;
+				cursor: pointer;
+				user-select: none;
+				line-height: 20px;
+				font-size: 0.9em;
+				font-weight: bold;
+			}
+			.kumulos-checkbox-container input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+				height: 0;
+				width: 0;
+			}
+			.kumulos-checkbox {
+				box-sizing: border-box;
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 20px;
+				width: 20px;
+				border-radius: 3px;
+				border: 1px solid #ddd;
+			}
+			.kumulos-checkbox-container:hover input ~ .kumulos-checkbox {
+				border-color: #aaa;
+				display: block;
+			}
+			.kumulos-checkbox-container:hover input ~ .kumulos-checkbox:after {
+				display: block;
+				border-color: #aaa;
+				box-shadow: none;
+			}
+			.kumulos-checkbox:after {
+				content: "";
+				position: absolute;
+				display: none;
+			}
+			.kumulos-checkbox-container input:checked ~ .kumulos-checkbox {
+				border-color: #aaa;
+			}
+			.kumulos-checkbox-container
+				input:checked
+				~ .kumulos-checkbox:after {
+				display: block;
+				border-color: #222;
+				box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+			}
+			.kumulos-checkbox-container .kumulos-checkbox:after {
+				left: 10px;
+				top: -7px;
+				width: 8px;
+				height: 20px;
+				border: solid #000;
+				border-width: 0 3px 3px 0;
+				transform: rotate(45deg);
+			}
+			.kumulos-banner-container {
+				display: flex;
+				flex-direction: row;
+				flex-flow: wrap;
+				position: fixed;
+				left: 0;
+				width: 100%;
+				min-height: 80px;
+				padding: 10px;
+				font-family: helvetica, sans-serif;
+				backface-visibility: hidden;
+				box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.54);
+			}
+			.kumulos-banner-container.kumulos-prompt-position-top {
+				top: 0;
+				animation: kumulos-slide-down 0.4s ease;
+			}
+			.kumulos-banner-container.kumulos-prompt-position-bottom {
+				bottom: 0;
+				top: unset;
+				animation: kumulos-slide-up 0.4s ease;
+			}
+			@media only screen and (min-device-width: 480px) {
+				.kumulos-banner-container {
+					flex-flow: initial;
+				}
+			}
+			.kumulos-banner-icon {
+				width: 65px;
+				height: 65px;
+				margin-right: 10px;
+			}
+			.kumulos-banner-content {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+			}
+			.kumulos-banner-header {
+				display: flex;
+				font-size: 12px;
+				line-height: 14px;
+			}
+			.kumulos-banner-header h1 {
+				font-size: inherit;
+				font-weight: bold;
+				margin: 0 0 3px 0;
+			}
+			@media only screen and (min-device-width: 480px) {
+				.kumulos-banner-header {
+					font-size: 18px;
+				}
+			}
+			.kumulos-banner-body {
+				display: flex;
+				flex-grow: 2;
+				align-items: flex-start;
+				font-size: 12px;
+				line-height: 14px;
+				overflow: hidden;
+				margin-top: 10px;
+			}
+			@media only screen and (min-device-width: 480px) {
+				.kumulos-banner-body {
+					font-size: 14px;
+				}
+			}
+			.kumulos-banner-actions {
+				display: flex;
+				align-self: center;
+				justify-self: flex-end;
+				width: 100%;
+				justify-content: flex-end;
+				margin-top: 10px;
+			}
+			@media only screen and (min-device-width: 480px) {
+				.kumulos-banner-actions {
+					width: auto;
+					margin-top: 0;
+				}
+			}
+			.kumulos-banner-compact .kumulos-banner-body {
+				margin-top: 0;
+			}
+			.kumulos-banner-compact .kumulos-banner-actions {
+				width: auto;
+				margin-top: 0;
+			}
+			.kumulos-banner-compact .kumulos-banner-close {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 18px;
+				font-weight: bold;
+				margin-right: 10px;
+			}
+			@supports (padding: max(0px)) {
+				.kumulos-safe-area-inset-pad-left {
+					padding-left: max(10px, env(safe-area-inset-left));
+				}
+				.kumulos-safe-area-inset-pad-right {
+					padding-right: max(10px, env(safe-area-inset-right));
+				}
+				.kumulos-safe-area-inset-pad-top {
+					padding-top: max(10px, env(safe-area-inset-top));
+				}
+				.kumulos-safe-area-inset-pad-bottom {
+					padding-bottom: max(10px, env(safe-area-inset-bottom));
+				}
+			}
+			.kumulos-bell-container {
+				position: fixed;
+			}
+			.kumulos-bell-container-bottom-left {
+				bottom: 15px;
+				left: 15px;
+			}
+			.kumulos-bell-container-bottom-right {
+				bottom: 15px;
+				right: 15px;
+			}
+			.kumulos-bell {
+				transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1),
+					box-shadow 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+				border-radius: 100%;
+				border-color: #fff;
+				background: #4c88e0;
+				box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.54);
+				width: 60px;
+				height: 60px;
+				padding: 10px;
+				transform: scale(0.9);
+				cursor: pointer;
+				animation: kumulos-anim-fade-in 0.2s ease-in;
+				backface-visibility: hidden;
+			}
+			.kumulos-bell:hover {
+				transform: scale(1);
+				box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.54);
+			}
+			.kumulos-bell:active {
+				transform: scale(0.8);
+				box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.54);
+			}
+			.kumulos-bell svg {
+				fill: #fff;
+				animation: kumulos-anim-shake 0.4s
+					cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+				animation-delay: 0.3s;
+			}
+			.kumulos-bell:before {
+				content: "";
+				display: block;
+				width: 85%;
+				height: 85%;
+				border: solid 1px;
+				border-radius: 100%;
+				border-color: inherit;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin: 7.5% 0 0 7.5%;
+			}
+			.kumulos-bell-inner {
+				border-radius: 100%;
+			}
+			.kumulos-channel-dialog-container,
+			.kumulos-alert-container {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				max-height: 100%;
+				padding: 20px;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				font-family: helvetica, sans-serif;
+				animation: kumulos-anim-fade-in 0.2s ease-in;
+				backface-visibility: hidden;
+			}
+			@media only screen and (min-device-width: 480px) {
+				.kumulos-channel-dialog-container,
+				.kumulos-alert-container {
+					left: 50%;
+					width: 500px;
+					min-height: 250px;
+					margin-left: -250px;
+					box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.54);
+					height: auto;
+				}
+				.kumulos-channel-dialog-container.kumulos-prompt-position-top-center,
+				.kumulos-alert-container.kumulos-prompt-position-top-center {
+					border-radius: 0 0 3px 3px;
+				}
+				.kumulos-channel-dialog-container.kumulos-prompt-position-center,
+				.kumulos-alert-container.kumulos-prompt-position-center {
+					border-radius: 3px;
+					top: 120px;
+				}
+			}
+			.kumulos-channel-dialog-icon,
+			.kumulos-alert-icon {
+				order: 2;
+				width: 60px;
+				height: 60px;
+				align-self: flex-start;
+			}
+			.kumulos-channel-dialog-content,
+			.kumulos-alert-content {
+				display: flex;
+				order: 1;
+				flex-direction: column;
+				flex: 1;
+				margin-right: 10px;
+			}
+			.kumulos-channel-dialog-header,
+			.kumulos-alert-header {
+				display: flex;
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+			.kumulos-channel-dialog-header h1,
+			.kumulos-alert-header h1 {
+				font-size: inherit;
+				font-weight: 400;
+				margin: 0;
+			}
+			.kumulos-channel-dialog-body,
+			.kumulos-alert-body {
+				flex: 1;
+				white-space: pre-wrap;
+				overflow-y: auto;
+			}
+			.kumulos-channel-dialog-actions,
+			.kumulos-alert-actions {
+				display: flex;
+				justify-content: flex-end;
+				margin-top: 20px;
+				order: 3;
+				width: 100%;
+				height: 30px;
+				align-self: flex-end;
+			}
+			.kumulos-channel-list-container {
+				margin: 20px 0;
+			}
+			body.kumulos-background-mask-blur {
+				overflow: hidden;
+			}
+			.kumulos-background-mask-blur
+				> *:not(.kumulos-prompt):not(.kumulos-overlay):not(
+					.kumulos-background-mask
+				) {
+				filter: blur(3px);
+			}
+			.kumulos-background-mask {
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				z-index: 900;
+				background-color: rgba(0, 0, 0, 0.3);
+				display: block;
+			}
+			.kumulos-overlay-blur > *:not(.kumulos-overlay) {
+				filter: blur(3px);
+			}
+			.kumulos-overlay {
+				box-sizing: border-box;
+				z-index: 2000;
+			}
+			.kumulos-overlay *,
+			.kumulos-overlay *:before,
+			.kumulos-overlay *:after {
+				box-sizing: inherit;
+			}
+			.kumulos-overlay-strip {
+				display: flex;
+				box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.8);
+				min-height: 150px;
+			}
+			.kumulos-overlay-strip:before {
+				display: block;
+				content: "";
+				width: calc(500px + 12%);
+				max-width: 660px;
+			}
+			.kumulos-overlay-content-container {
+				display: flex;
+				max-width: 38%;
+				padding: 1em;
+				font-size: 14px;
+				font-family: helvetica, sans-serif;
+			}
+			.kumulos-overlay-content-container * {
+				margin: 0;
+			}
+			.kumulos-overlay-content-container svg {
+				margin: 55px 1.7em 0 0;
+				stroke: none;
+				fill: rgba(0, 0, 0, 0.8);
+				flex-shrink: 0;
+			}
+			.kumulos-overlay-content-container img {
+				width: 55px;
+				height: 55px;
+				flex-shrink: 0;
+			}
+			.kumulos-overlay-content-container h3,
+			.kumulos-overlay-content-container p,
+			.kumulos-overlay-content-container a {
+				color: inherit;
+			}
+			.kumulos-overlay-content-container h3 {
+				font-size: 1.3em;
+				font-weight: bold;
+			}
+			.kumulos-overlay-content-container a {
+				margin-right: 0.65em;
+				opacity: 0.8;
+				text-decoration: none;
+			}
+			.kumulos-overlay .kumulos-overlay-content {
+				margin-left: 0.75em;
+			}
+			.kumulos-overlay .kumulos-overlay-content p {
+				margin: 0.5em 0;
+			}
+			.kumulos-overlay .kumulos-silent-overlay-indicator {
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 1;
+			}
+			.kumulos-overlay .kumulos-silent-overlay-content-text {
+				max-width: 500px;
+				text-align: center;
+				font-size: 1.3em;
+				font-family: helvetica, sans-serif;
+			}
+			.kumulos-overlay-chrome .kumulos-overlay-strip:before {
+				width: 440px;
+			}
+			.kumulos-overlay-edge .kumulos-overlay-strip:before {
+				display: none;
+			}
+			.kumulos-overlay-edge .kumulos-overlay-strip {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				padding-bottom: 60px;
+				justify-content: center;
+			}
+			.kumulos-overlay-edge .kumulos-overlay-content-container {
+				min-width: 675px;
+			}
+			.kumulos-overlay-edge .kumulos-overlay-content-container svg {
+				order: 1;
+				transform: rotate(-30deg);
+			}
+			.kumulos-overlay-safari .kumulos-overlay-strip:before {
+				width: calc(50% + 212px);
+				max-width: 100%;
+			}
+			@media (max-width: 900px) {
+				.kumulos-overlay {
+					display: none;
+				}
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-ad-name], [data-ad-width], div[aria-label="Ads"], div[data-ad-targeting], div[data-native_ad], div[id^="ad_position_"], div[id^="dfp-ad-"], div[id^="ezoic-pub-ad-"], div[id^="yandex_ad"], ins.adsbygoogle[data-ad-slot], div[id*="ScriptRoot"], a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], amp-embed[type="taboola"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-cy="cookie-banner"],
+			app-cookie-warning,
+			app-cookies,
+			div[data-gdpr-consent-prompt],
+			div[data-testid="cookie-policy-banner"],
+			sibbo-cmp-layout,
+			thor-cookies,
+			div#__tealiumGDPRecModal,
+			div#cmp-app-container,
+			div#cookie-popup,
+			div#cookieConsentModal,
+			div#privacy_policy,
+			div.c-cookies,
+			div.ccpa-message,
+			div.cnil,
+			div.cookie-banner,
+			div.cookie-bar,
+			div.cookie-confirm,
+			div.cookie-consent,
+			div.cookie-consent-banner,
+			div.cookie-consent-modal,
+			div.cookie-consent-popup,
+			div.cookie-container,
+			div.cookie-content,
+			div.cookie-disclaimer,
+			div.cookie-layer,
+			div.cookie-notice,
+			div.cookie-notification,
+			div.cookie-overlay,
+			div.cookie-policy,
+			div.cookie-popup,
+			div.cookie-wrapper,
+			div.cookieHolder,
+			div.cookie_popup,
+			div.cookiebar,
+			div.cookies-banner,
+			div.cookies-modal-container,
+			div.cookies-visible,
+			div.eupopup,
+			div.gdpr,
+			div.js-disclaimer,
+			div.privacy-modal,
+			div.privacy-notice,
+			div.privacy_prompt,
+			div.v-cookie,
+			div.with-cookie,
+			section.cookie-banner {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			.scroller > .cookie {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			a[href^="https://fc.lc/ref/"], [href*="postlnk.com"], [href*="passtechusa.com"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href="https://devowl.io/wordpress-real-cookie-banner/"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			a[href^="https://fc.lc/ref/"], [href*="postlnk.com"], [href*="passtechusa.com"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href="https://devowl.io/wordpress-real-cookie-banner/"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			.ads.bottom,
+			.ads.box,
+			.ads.cell,
+			.ads.cta,
+			.ads.grid-layout,
+			.ads.square,
+			.ads.top,
+			.ads.widget,
+			.ad.addon,
+			.ad.bottomrect,
+			.ad.box,
+			.ad.brandboard,
+			.ad.card,
+			.ad.center,
+			.ad.contentboard,
+			.ad.desktop-970x250,
+			.ad.element,
+			.ad.floater-link,
+			.ad.gallery,
+			.ad.halfpage,
+			.ad.inner,
+			.ad.item,
+			.ad.leaderboard,
+			.ad.maxiboard,
+			.ad.maxisky,
+			.ad.middlerect,
+			.ad.module,
+			.ad.monsterboard,
+			.ad.netboard,
+			.ad.post-area,
+			.ad.promotion,
+			.ad.rectangle,
+			.ad.rectangle_2,
+			.ad.rectangle_3,
+			.ad.rectangle_home_1,
+			.ad.section,
+			.ad.sidebar-module,
+			.ad.size-300x250,
+			.ad.skybridgeleft,
+			.ad.small-mpu,
+			.ad.small-teaser,
+			.ad.super,
+			.ad.wideboard_tablet,
+			.ad.widget {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-ad-name], [data-ad-width], div[aria-label="Ads"], div[data-ad-targeting], div[data-native_ad], div[id^="ad_position_"], div[id^="dfp-ad-"], div[id^="ezoic-pub-ad-"], div[id^="yandex_ad"], ins.adsbygoogle[data-ad-slot], div[id*="ScriptRoot"], a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], amp-embed[type="taboola"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-cy="cookie-banner"],
+			app-cookie-warning,
+			app-cookies,
+			div[data-gdpr-consent-prompt],
+			div[data-testid="cookie-policy-banner"],
+			sibbo-cmp-layout,
+			thor-cookies,
+			div#__tealiumGDPRecModal,
+			div#cmp-app-container,
+			div#cookie-popup,
+			div#cookieConsentModal,
+			div#privacy_policy,
+			div.c-cookies,
+			div.ccpa-message,
+			div.cnil,
+			div.cookie-banner,
+			div.cookie-bar,
+			div.cookie-confirm,
+			div.cookie-consent,
+			div.cookie-consent-banner,
+			div.cookie-consent-modal,
+			div.cookie-consent-popup,
+			div.cookie-container,
+			div.cookie-content,
+			div.cookie-disclaimer,
+			div.cookie-layer,
+			div.cookie-notice,
+			div.cookie-notification,
+			div.cookie-overlay,
+			div.cookie-policy,
+			div.cookie-popup,
+			div.cookie-wrapper,
+			div.cookieHolder,
+			div.cookie_popup,
+			div.cookiebar,
+			div.cookies-banner,
+			div.cookies-modal-container,
+			div.cookies-visible,
+			div.eupopup,
+			div.gdpr,
+			div.js-disclaimer,
+			div.privacy-modal,
+			div.privacy-notice,
+			div.privacy_prompt,
+			div.v-cookie,
+			div.with-cookie,
+			section.cookie-banner {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href*="uselnk.com/"], a[href^="https://static.fleshlight.com/images/banners/"], [href*="postlnk.com"], [href*="passtechusa.com"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href="https://devowl.io/wordpress-real-cookie-banner/"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href*="postlnk.com"],
+			[href*="passtechusa.com"] {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href="https://devowl.io/wordpress-real-cookie-banner/"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href*="uselnk.com/"], [href*="www.gaming-adult.com/"], [href^="https://affiliate.fastcomet.com/"] > img, [href*="postlnk.com"], [href*="passtechusa.com"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href="https://devowl.io/wordpress-real-cookie-banner/"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href*="postlnk.com"],
+			[href*="passtechusa.com"] {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[href="https://devowl.io/wordpress-real-cookie-banner/"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			.notification.cookie,
+			.notification.cookie-consent,
+			.notification.cookies:not(body):not(html),
+			.notification.show-cookie,
+			.notification[data-notification="accept-cookies"],
+			.notification[data-notification="coockieConsent"] {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-ad-name], [data-ad-width], div[aria-label="Ads"], div[data-ad-targeting], div[data-native_ad], div[id^="ad_position_"], div[id^="dfp-ad-"], div[id^="ezoic-pub-ad-"], div[id^="yandex_ad"], ins.adsbygoogle[data-ad-slot], div[id*="ScriptRoot"], a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], amp-embed[type="taboola"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-cy="cookie-banner"],
+			app-cookie-warning,
+			app-cookies,
+			div[data-gdpr-consent-prompt],
+			div[data-testid="cookie-policy-banner"],
+			sibbo-cmp-layout,
+			thor-cookies,
+			div#__tealiumGDPRecModal,
+			div#cmp-app-container,
+			div#cookie-popup,
+			div#cookieConsentModal,
+			div#privacy_policy,
+			div.c-cookies,
+			div.ccpa-message,
+			div.cnil,
+			div.cookie-banner,
+			div.cookie-bar,
+			div.cookie-confirm,
+			div.cookie-consent,
+			div.cookie-consent-banner,
+			div.cookie-consent-modal,
+			div.cookie-consent-popup,
+			div.cookie-container,
+			div.cookie-content,
+			div.cookie-disclaimer,
+			div.cookie-layer,
+			div.cookie-notice,
+			div.cookie-notification,
+			div.cookie-overlay,
+			div.cookie-policy,
+			div.cookie-popup,
+			div.cookie-wrapper,
+			div.cookieHolder,
+			div.cookie_popup,
+			div.cookiebar,
+			div.cookies-banner,
+			div.cookies-modal-container,
+			div.cookies-visible,
+			div.eupopup,
+			div.gdpr,
+			div.js-disclaimer,
+			div.privacy-modal,
+			div.privacy-notice,
+			div.privacy_prompt,
+			div.v-cookie,
+			div.with-cookie,
+			section.cookie-banner {
+				display: none !important;
+			}
+		</style>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/betano/4.b86566d22952873932f5.css"
+		/>
+		<script
+			charset="utf-8"
+			src="/assets/betano/4.20eecb77f5592e881b81.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/betano/11.357c22b6687263582b62.css"
+		/>
+		<script
+			charset="utf-8"
+			src="/assets/betano/11.a140edb4486d94389e8a.js"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/assets/betano/72.eb96d0c22a1cbf143179.css"
+		/>
+		<script
+			charset="utf-8"
+			src="/assets/betano/72.9f9575005e153a84eb42.js"
+		></script>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-ad-name], [data-ad-width], div[aria-label="Ads"], div[data-ad-targeting], div[data-native_ad], div[id^="ad_position_"], div[id^="dfp-ad-"], div[id^="ezoic-pub-ad-"], div[id^="yandex_ad"], ins.adsbygoogle[data-ad-slot], div[id*="ScriptRoot"], a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], amp-embed[type="taboola"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-cy="cookie-banner"],
+			app-cookie-warning,
+			app-cookies,
+			div[data-gdpr-consent-prompt],
+			div[data-testid="cookie-policy-banner"],
+			sibbo-cmp-layout,
+			thor-cookies,
+			div#__tealiumGDPRecModal,
+			div#cmp-app-container,
+			div#cookie-popup,
+			div#cookieConsentModal,
+			div#privacy_policy,
+			div.c-cookies,
+			div.ccpa-message,
+			div.cnil,
+			div.cookie-banner,
+			div.cookie-bar,
+			div.cookie-confirm,
+			div.cookie-consent,
+			div.cookie-consent-banner,
+			div.cookie-consent-modal,
+			div.cookie-consent-popup,
+			div.cookie-container,
+			div.cookie-content,
+			div.cookie-disclaimer,
+			div.cookie-layer,
+			div.cookie-notice,
+			div.cookie-notification,
+			div.cookie-overlay,
+			div.cookie-policy,
+			div.cookie-popup,
+			div.cookie-wrapper,
+			div.cookieHolder,
+			div.cookie_popup,
+			div.cookiebar,
+			div.cookies-banner,
+			div.cookies-modal-container,
+			div.cookies-visible,
+			div.eupopup,
+			div.gdpr,
+			div.js-disclaimer,
+			div.privacy-modal,
+			div.privacy-notice,
+			div.privacy_prompt,
+			div.v-cookie,
+			div.with-cookie,
+			section.cookie-banner {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-ad-name], [data-ad-width], div[aria-label="Ads"], div[data-ad-targeting], div[data-native_ad], div[id^="ad_position_"], div[id^="dfp-ad-"], div[id^="ezoic-pub-ad-"], div[id^="yandex_ad"], ins.adsbygoogle[data-ad-slot], div[id*="ScriptRoot"], a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], amp-embed[type="taboola"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-cy="cookie-banner"],
+			app-cookie-warning,
+			app-cookies,
+			div[data-gdpr-consent-prompt],
+			div[data-testid="cookie-policy-banner"],
+			sibbo-cmp-layout,
+			thor-cookies,
+			div#__tealiumGDPRecModal,
+			div#cmp-app-container,
+			div#cookie-popup,
+			div#cookieConsentModal,
+			div#privacy_policy,
+			div.c-cookies,
+			div.ccpa-message,
+			div.cnil,
+			div.cookie-banner,
+			div.cookie-bar,
+			div.cookie-confirm,
+			div.cookie-consent,
+			div.cookie-consent-banner,
+			div.cookie-consent-modal,
+			div.cookie-consent-popup,
+			div.cookie-container,
+			div.cookie-content,
+			div.cookie-disclaimer,
+			div.cookie-layer,
+			div.cookie-notice,
+			div.cookie-notification,
+			div.cookie-overlay,
+			div.cookie-policy,
+			div.cookie-popup,
+			div.cookie-wrapper,
+			div.cookieHolder,
+			div.cookie_popup,
+			div.cookiebar,
+			div.cookies-banner,
+			div.cookies-modal-container,
+			div.cookies-visible,
+			div.eupopup,
+			div.gdpr,
+			div.js-disclaimer,
+			div.privacy-modal,
+			div.privacy-notice,
+			div.privacy_prompt,
+			div.v-cookie,
+			div.with-cookie,
+			section.cookie-banner {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-ad-name], [data-ad-width], div[aria-label="Ads"], div[data-ad-targeting], div[data-native_ad], div[id^="ad_position_"], div[id^="dfp-ad-"], div[id^="ezoic-pub-ad-"], div[id^="yandex_ad"], ins.adsbygoogle[data-ad-slot], div[id*="ScriptRoot"], a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], amp-embed[type="taboola"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-cy="cookie-banner"],
+			app-cookie-warning,
+			app-cookies,
+			div[data-gdpr-consent-prompt],
+			div[data-testid="cookie-policy-banner"],
+			sibbo-cmp-layout,
+			thor-cookies,
+			div#__tealiumGDPRecModal,
+			div#cmp-app-container,
+			div#cookie-popup,
+			div#cookieConsentModal,
+			div#privacy_policy,
+			div.c-cookies,
+			div.ccpa-message,
+			div.cnil,
+			div.cookie-banner,
+			div.cookie-bar,
+			div.cookie-confirm,
+			div.cookie-consent,
+			div.cookie-consent-banner,
+			div.cookie-consent-modal,
+			div.cookie-consent-popup,
+			div.cookie-container,
+			div.cookie-content,
+			div.cookie-disclaimer,
+			div.cookie-layer,
+			div.cookie-notice,
+			div.cookie-notification,
+			div.cookie-overlay,
+			div.cookie-policy,
+			div.cookie-popup,
+			div.cookie-wrapper,
+			div.cookieHolder,
+			div.cookie_popup,
+			div.cookiebar,
+			div.cookies-banner,
+			div.cookies-modal-container,
+			div.cookies-visible,
+			div.eupopup,
+			div.gdpr,
+			div.js-disclaimer,
+			div.privacy-modal,
+			div.privacy-notice,
+			div.privacy_prompt,
+			div.v-cookie,
+			div.with-cookie,
+			section.cookie-banner {
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-ad-name], [data-ad-width], div[aria-label="Ads"], div[data-ad-targeting], div[data-native_ad], div[id^="ad_position_"], div[id^="dfp-ad-"], div[id^="ezoic-pub-ad-"], div[id^="yandex_ad"], ins.adsbygoogle[data-ad-slot], div[id*="ScriptRoot"], a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], amp-embed[type="taboola"]
+			{
+				display: none !important;
+			}
+		</style>
+		<style type="text/css" id="cliqz-adblokcer-css-rules">
+			[data-cy="cookie-banner"],
+			app-cookie-warning,
+			app-cookies,
+			div[data-gdpr-consent-prompt],
+			div[data-testid="cookie-policy-banner"],
+			sibbo-cmp-layout,
+			thor-cookies,
+			div#__tealiumGDPRecModal,
+			div#cmp-app-container,
+			div#cookie-popup,
+			div#cookieConsentModal,
+			div#privacy_policy,
+			div.c-cookies,
+			div.ccpa-message,
+			div.cnil,
+			div.cookie-banner,
+			div.cookie-bar,
+			div.cookie-confirm,
+			div.cookie-consent,
+			div.cookie-consent-banner,
+			div.cookie-consent-modal,
+			div.cookie-consent-popup,
+			div.cookie-container,
+			div.cookie-content,
+			div.cookie-disclaimer,
+			div.cookie-layer,
+			div.cookie-notice,
+			div.cookie-notification,
+			div.cookie-overlay,
+			div.cookie-policy,
+			div.cookie-popup,
+			div.cookie-wrapper,
+			div.cookieHolder,
+			div.cookie_popup,
+			div.cookiebar,
+			div.cookies-banner,
+			div.cookies-modal-container,
+			div.cookies-visible,
+			div.eupopup,
+			div.gdpr,
+			div.js-disclaimer,
+			div.privacy-modal,
+			div.privacy-notice,
+			div.privacy_prompt,
+			div.v-cookie,
+			div.with-cookie,
+			section.cookie-banner {
+				display: none !important;
+			}
+		</style>
+	</head>
+
+	<body class="">
+		<svg
+			id="__svg__icons__dom__1700646333665__"
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:link="http://www.w3.org/1999/xlink"
+			style="position: absolute; width: 0px; height: 0px"
+		>
+			<symbol viewBox="0 0 24 24" id="icon-simple-arrow_down">
+				<path
+					d="m6.126 9.723 5.491 6.101c.1.112.24.176.385.176a.516.516 0 0 0 .385-.176l5.489-6.101a.554.554 0 0 0-.054-.758l-.925-.835a.49.49 0 0 0-.719.06l-4.082 4.67c-.024.03-.024.047-.095.047-.07 0-.07-.018-.094-.047L7.823 8.189a.499.499 0 0 0-.348-.186.478.478 0 0 0-.37.128l-.926.834a.549.549 0 0 0-.053.758Z"
+				></path>
+			</symbol>
+			<symbol viewBox="0 0 24 24" id="icon-simple-arrow_odds_up">
+				<path
+					d="M18.782 11.863 13.05 5.467A1.58 1.58 0 0 0 12 5c-.398.02-.773.186-1.05.467l-5.732 6.396a.813.813 0 0 0-.175.814.848.848 0 0 0 1.435.275L10.9 8.014a.15.15 0 0 1 .164-.04.146.146 0 0 1 .096.136v10.066c0 .455.376.824.839.824.463 0 .84-.369.84-.824V8.11c-.001-.06.037-.115.095-.136a.15.15 0 0 1 .164.04l4.424 4.938a.848.848 0 0 0 1.434-.275.813.813 0 0 0-.175-.814Z"
+				></path>
+			</symbol>
+			<symbol viewBox="0 0 24 24" id="icon-simple-arrow_right">
+				<path
+					d="m9.605 17.874 6.231-5.491a.533.533 0 0 0 0-.77l-6.23-5.489a.493.493 0 0 0-.707.054l-.778.925a.514.514 0 0 0 .055.719l4.723 4.082a.125.125 0 0 1 0 .19l-4.721 4.083a.51.51 0 0 0-.174.35.5.5 0 0 0 .118.37l.779.926a.494.494 0 0 0 .706.053l-.002-.002Z"
+				></path>
+			</symbol>
+			<symbol viewBox="0 0 24 24" id="icon-simple-arrow_thin_up">
+				<path
+					d="M18.782 11.863 13.05 5.467A1.58 1.58 0 0 0 12 5c-.398.02-.773.186-1.05.467l-5.732 6.396a.813.813 0 0 0-.175.814.848.848 0 0 0 1.435.275L10.9 8.014a.15.15 0 0 1 .164-.04.146.146 0 0 1 .096.136v10.066c0 .455.376.824.839.824.463 0 .84-.369.84-.824V8.11c-.001-.06.037-.115.095-.136a.15.15 0 0 1 .164.04l4.424 4.938a.848.848 0 0 0 1.434-.275.813.813 0 0 0-.175-.814Z"
+				></path>
+			</symbol>
+		</svg>
+
+		<main id="app" class="content" data-v-app=""></main>
+		<div style="display: none" bis_skin_checked="1">
+			328-ng_betano_stoixima_mobile
+		</div>
+		<div style="display: none" bis_skin_checked="1">
+			https://www.betano.ng
+		</div>
+
+		<script defer="" src="/assets/betano/gtm.js"></script>
+		<!---->
+		<div data-v-app="" bis_skin_checked="1"></div>
+
+		<div id="kumulos-ui-root" bis_skin_checked="1">
+			<div id="kumulos-ui-root-push" bis_skin_checked="1"></div>
+		</div>
+		<script type="module" src="/src/main.js"></script>
+	</body>
+</html>
