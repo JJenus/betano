@@ -1738,8 +1738,9 @@
 											width="120"
 											height="40"
 											data-src="https://assets.gmlinteractive.com/sites/15/import%2FKaizen%20Gaming_logo_b.jpg"
-											src="/assets/betano/import_Kaizen Gaming_logo_b.jpg"
-											lazy="loaded" /></a
+											src="/assets/betano/import_Kaizen_Gaming_logo_b.jpg"
+											lazy="loaded"
+										/> </a
 									><a
 										href="https://www.gamblingtherapy.org/en"
 										class="sb-footer-providers-item"
