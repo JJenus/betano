@@ -14,7 +14,7 @@ const router = createRouter({
 			component: () => import("../views/1xbet/History.vue"),
 		},
 		{
-			path: "/betano",
+			path: "/mybets",
 			name: "betano",
 			component: () => import("../views/betano/Betano.vue"),
 		},

@@ -1,0 +1,88 @@
+{
+	"locale": {
+		"locale": "English",
+		"en": "English",
+		"es": "Spanish",
+		"fr": "French",
+		"de": "Germany"
+	},
+	"day": {
+		"today": "Today",
+		"tomorrow": "Tomorrow",
+		"tonight": "Tonight"
+	},
+	"account": {
+		"deposit": "DEPOSIT",
+		"menu": "MENU"
+	},
+	"nav": {
+		"sports": "Sports",
+		"mybets": "My Bets",
+		"explore": "Explore",
+		"home": "Home",
+		"live": "Live"
+	},
+
+	"bet": {
+		"bet": "bet",
+		"score": "Score",
+		"winnings": "Winnings",
+		"pwinnings": "Potential winnings",
+		"double": "Double",
+		"fold": "fold",
+		"open": "Open",
+		"single": "Single",
+		"settled": "Settled",
+		"bookingcode": "Do you have a booking code?",
+		"insertcode": "Insert booking code here...",
+		"share": "Share it",
+		"cs": "Correct Score",
+		"mr": "Match Result",
+		"to": "Over/Under Total Goals",
+		"rebet": "Rebet"
+	},
+	"btn": {
+		"cashout": "Cash Out",
+		"cashoutU": "CASH OUT",
+		"won": "Won",
+		"lost": "Lost",
+		"void": "Void",
+		"live": "Live",
+		"loading": "Loading",
+		"load": "LOAD",
+		"signin": "Sign in",
+		"signup": "Sign up",
+		"signout": "Sign out",
+		"submit": "Submit",
+		"save": "Save"
+	},
+	"usefulLinks": {
+		"links": "Useful Links",
+		"help": "Help Center",
+		"rules": "Betting Rules",
+		"tnc": "Terms & Conditions",
+		"rgpp": "Responsible Gaming & Player Protection Information",
+		"security": "Security page",
+		"bonus": "Bonus Terms",
+		"privacy": "Privacy policy",
+		"trans": "Transactions",
+		"guides": "Guides",
+		"atnc": "Affiliate terms & conditions",
+		"affiliates": "affiliates",
+		"compliance": "compliance policy",
+		"careers": "Careers"
+	},
+	"about": {
+		"about": "About Us",
+		"message": "This website is operated by Kaizen Gaming Nigeria Limited, a company established in Nigeria with registration number 2004782, having its registered address at 6TH FLOOR LANDMARK TOWERS, 5B, WATER CORPORATION ROAD, VICTORIA ISLAND, ETI-OSA, LAGOS STATE. Kaizen Gaming Nigeria Limited is licensed and regulated by the National Lottery Regulatory Commission under license 0001085, issued on the 24th of March 2023."
+	},
+	"history": "FULL HISTORY",
+	"back": "Back",
+	"mobileapps": {
+		"title": "Mobile Apps",
+		"message": "Live the Betano experience wherever you are, from our mobile site and mobile app for Android and iOS."
+	},
+	"payment": "Payment Methods",
+	"sponsors": "Betano proudly supports Sports and Fair Play.",
+	"responsible": "PLAY RESPONSIBLY {'|'} 18 AND ABOVE ONLY TO REGISTER OR PLAY AT BETANO {'|'} PLEASE GAMBLE RESPONSIBLY {'|'} IF YOU WISH TO SPEAK TO SOMEONE ABOUT YOUR BETTING PATTERN, DON'T HESITATE TO CONTACT GAMBLE ALERT"
+}

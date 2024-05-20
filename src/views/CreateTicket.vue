@@ -5,10 +5,19 @@
 	import { bets } from "../stores/bets";
 	import { alert, util } from "../stores/utility";
 	import moment from "moment";
+	import Tr from "@/i18n/translation.js";
+	// import Tr from "../i18n/translation.js"
 
 	const showNew = ref(true);
 	const updateIndex = ref(false);
 	const tickets = ref(bets.tickets.value);
+
+	const supportedLocales = Tr.supportedLocales;
+
+	const setLocale = async () => {
+		console.log("called...");
+		await Tr.switchLanguage(form.value.lang);
+	};
 
 	// localStorage.clear();
 	const ticket = ref({
@@ -143,6 +152,13 @@
 		<div class="card rounded-4 h-100">
 			<div class="card-body">
 				<h4 class="text-center h1 mb-3">Create Ticket</h4>
+				<div class="mb-5 text-center">
+					<a
+						class="btn btn-linki btn-outline-secondary"
+						href="/mybets"
+						>View Tickets</a
+					>
+				</div>
 
 				<div class="row mb-4">
 					<div class="col-6">
@@ -191,10 +207,17 @@
 								</div>
 								<div class="col-6">
 									<label class="form-label">Language</label>
-									<select class="form-control form-control-lg" v-model="form.lang">
-										<option value="de">German</option>
-										<option value="de">Spanish</option>
-										<option value="en">English</option>
+									<select
+										class="form-control form-control-lg"
+										@change="setLocale()"
+										v-model="form.lang"
+									>
+										<option
+											v-for="locale in supportedLocales"
+											:value="locale.locale"
+										>
+											{{ $t(`locale.${locale.locale}`) }}
+										</option>
 									</select>
 								</div>
 								<div class="col-3">

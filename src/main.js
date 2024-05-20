@@ -1,14 +1,40 @@
 // import './assets/main.css'
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createApp } from "vue";
+import { createPinia } from "pinia";
 
-import App from './App.vue'
-import router from './router'
+import App from "./App.vue";
+import router from "./router";
+import i18n from "./i18n";
 
-const app = createApp(App)
+const env = import.meta.env;
 
-app.use(createPinia())
-app.use(router)
+// "vue-i18n": "^9.2.2"
 
-app.mount('#app')
+if (
+	env.VITE_ENV == "development" &&
+	window.console &&
+	console.log &&
+	console.warn &&
+	console.error
+) {
+	window.debug = {
+		log: window.console.log,
+		warn: window.console.warn,
+		error: window.console.error,
+	};
+} else {
+	window.debug = {
+		log: function () {},
+		warn: function () {},
+		error: function () {},
+	};
+}
+
+const app = createApp(App);
+
+app.use(i18n);
+app.use(createPinia());
+app.use(router);
+
+app.mount("#app");

@@ -132,8 +132,9 @@
 										>
 											<span
 												class="tw-text-xs tw-font-bold tw-leading-s tw-text-n-13-steel"
-												>Do you have a booking
-												code?</span
+												>{{
+													$t("bet.bookingcode")
+												}}</span
 											><svg
 												viewBox="0 0 12 12"
 												height="12"
@@ -158,7 +159,9 @@
 												bis_skin_checked="1"
 											>
 												<input
-													placeholder="Insert booking code here..."
+													:placeholder="
+														$t('bet.insertcode')
+													"
 													class="tw-flex-1 tw-p-n tw-rounded-s tw-text-n-28-cloud-burst tw-bg-white-snow tw-box-border focus-visible:tw-outline-none tw-border tw-border-solid placeholder:tw-text-s placeholder:tw-leading-s placeholder:tw-text-n-48-slate tw-border-n-75-smokey focus:tw-shadow-outline"
 													type="text"
 												/><button
@@ -167,7 +170,9 @@
 												>
 													<span
 														class="tw-text-xs tw-leading-s tw-font-bold tw-text-center"
-														>LOAD</span
+														>{{
+															$t("btn.load")
+														}}</span
 													>
 												</button>
 											</div>
@@ -241,7 +246,7 @@
 														bis_skin_checked="1"
 													>
 														<div>
-															Open
+															{{ $t("bet.open") }}
 															<span
 																v-if="
 																	openTickets.length >
@@ -286,7 +291,11 @@
 														bis_skin_checked="1"
 													>
 														<div>
-															Settled
+															{{
+																$t(
+																	"bet.settled"
+																)
+															}}
 															<span
 																v-if="
 																	wonTickets.length >
@@ -368,8 +377,13 @@
 																>
 																	<!--v-if--><span
 																		class="tw-py-xs tw-leading-xs"
-																		>Won</span
-																	></button
+																	>
+																		{{
+																			$t(
+																				"btn.won"
+																			)
+																		}}
+																	</span></button
 																><!---->
 															</div>
 															<div
@@ -385,8 +399,12 @@
 																>
 																	<!--v-if--><span
 																		class="tw-py-xs tw-leading-xs"
-																		>Cash
-																		Out</span
+																	>
+																		{{
+																			$t(
+																				"btn.cashout"
+																			)
+																		}}</span
 																	></button
 																><!---->
 															</div>
@@ -403,8 +421,13 @@
 																>
 																	<!--v-if--><span
 																		class="tw-py-xs tw-leading-xs"
-																		>Lost</span
-																	></button
+																	>
+																		{{
+																			$t(
+																				"btn.lost"
+																			)
+																		}}
+																	</span></button
 																><!---->
 															</div>
 															<div
@@ -420,8 +443,13 @@
 																>
 																	<!--v-if--><span
 																		class="tw-py-xs tw-leading-xs"
-																		>Void</span
-																	></button
+																	>
+																		{{
+																			$t(
+																				"btn.void"
+																			)
+																		}}
+																	</span></button
 																><!---->
 															</div>
 														</div>
@@ -444,9 +472,14 @@
 																>
 																	<span
 																		class="tw-py-xs tw-leading-xs"
-																		>Live</span
-																	></button
-																><!---->
+																	>
+																		{{
+																			$t(
+																				"btn.live"
+																			)
+																		}}
+																	</span>
+																</button>
 															</div>
 															<div
 																class="swiper-slide swiper-slide-next"
@@ -461,9 +494,13 @@
 																>
 																	<span
 																		class="tw-py-xs tw-leading-xs"
-																		>Cash
-																		Out</span
-																	></button
+																	>
+																		{{
+																			$t(
+																				"btn.cashout"
+																			)
+																		}}
+																	</span></button
 																><!---->
 															</div>
 														</div>
@@ -532,7 +569,7 @@
 										class="tw-w-full tw-text-center tw-p-m tw-text-n-13-steel tw-text-xs tw-font-bold tw-cursor-pointer"
 										data-qa="full-history-button"
 									>
-										FULL HISTORY
+										{{ $t("history") }}
 									</button>
 								</div>
 							</div>
@@ -611,8 +648,7 @@
 										class="sb-sponsorships__wrapper__text"
 										bis_skin_checked="1"
 									>
-										Betano proudly supports Sports and Fair
-										Play.
+										{{$t("sponsors")}}
 									</div>
 								</div>
 								<div
@@ -1211,7 +1247,7 @@
 												data-msgid=" Useful Links "
 												data-current-language="en_NG"
 											>
-												Useful Links
+												{{ $t("usefulLinks.links") }}
 											</h3>
 											<svg
 												@click="
@@ -1410,7 +1446,7 @@
 												data-msgid=" About Us "
 												data-current-language="en_NG"
 											>
-												About Us
+												{{ $t("about.about") }}
 											</h3>
 											<svg
 												@click="
@@ -1437,25 +1473,7 @@
 											<p
 												class="sb-footer__common__body__text sb-footer__common__body__text--padding-right"
 											>
-												This website is operated by
-												Kaizen Gaming Nigeria Limited, a
-												company established in Nigeria
-												with registration number
-												2004782, having its registered
-												address at 6TH FLOOR LANDMARK
-												TOWERS, 5B, WATER CORPORATION
-												ROAD, VICTORIA ISLAND, ETI-OSA,
-												LAGOS STATE. Kaizen Gaming
-												Nigeria Limited is licensed and
-												regulated by the National
-												Lottery Regulatory Commission
-												under license 0001085, issued on
-												the 24th of March 2023.<br /><br />*The
-												SuperOdds offer applies to the
-												"Full Time Result" market until
-												the start of the game. Eligible
-												games are indicated with the SO
-												symbol.
+												{{ $t("about.message") }}
 											</p>
 											<br />
 										</div>
@@ -1480,7 +1498,7 @@
 												data-msgid=" Payment Methods "
 												data-current-language="en_NG"
 											>
-												Payment Methods
+												{{ $t("payment") }}
 											</h3>
 										</div>
 										<ul
@@ -1548,7 +1566,7 @@
 													data-msgid=" Mobile Apps "
 													data-current-language="en_NG"
 												>
-													Mobile Apps
+													{{ $t("mobileapps.title") }}
 												</h3>
 											</div>
 											<div
@@ -1561,10 +1579,9 @@
 													data-msgid=" Live the Stoiximan experience wherever you are, from our mobile site and mobile app for Android and iOS. "
 													data-current-language="en_NG"
 												>
-													Live the Betano experience
-													wherever you are, from our
-													mobile site and mobile app
-													for Android and iOS.
+													{{
+														$t("mobileapps.message")
+													}}
 												</p>
 												<div
 													class="sb-footer__apps__wrapper"
@@ -1895,12 +1912,7 @@
 										class="sb-footer__notes__text"
 										bis_skin_checked="1"
 									>
-										PLAY RESPONSIBLY | 18 AND ABOVE ONLY TO
-										REGISTER OR PLAY AT BETANO | PLEASE
-										GAMBLE RESPONSIBLY | IF YOU WISH TO
-										SPEAK TO SOMEONE ABOUT YOUR BETTING
-										PATTERN, DON'T HESITATE TO CONTACT
-										GAMBLE ALERT
+										{{ $t("responsible") }}
 									</div>
 								</div>
 							</div>
@@ -1959,7 +1971,7 @@
 								</div>
 								<span
 									class="bottom-nav-menu__items__item__content__text tw-text-n-48-slate"
-									>Home</span
+									>{{ $t("nav.home") }}</span
 								></a
 							>
 						</li>
@@ -1992,7 +2004,7 @@
 								</div>
 								<span
 									class="bottom-nav-menu__items__item__content__text tw-text-n-48-slate"
-									>Live</span
+									>{{ $t("nav.live") }}</span
 								></a
 							>
 						</li>
@@ -2030,7 +2042,7 @@
 								</div>
 								<span
 									class="bottom-nav-menu__items__item__content__text tw-text-n-48-slate"
-									>Sports</span
+									>{{ $t("nav.sports") }}</span
 								></a
 							>
 						</li>
@@ -2087,7 +2099,8 @@
 									{{ openTickets.length }}</i
 								><span
 									class="bottom-nav-menu__items__item__content__text tw-text-n-48-slate"
-									>My Bets</span
+								>
+									{{ $t("nav.mybets") }}</span
 								></a
 							>
 						</li>
@@ -2136,7 +2149,7 @@
 								</div>
 								<span
 									class="bottom-nav-menu__items__item__content__text tw-text-n-48-slate"
-									>Explore</span
+									>{{ $t("nav.explore") }}</span
 								></a
 							>
 						</li>

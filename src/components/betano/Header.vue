@@ -96,7 +96,7 @@
 											data-qa="collapsed-menu-button"
 											class="tw-no-underline tw-hidden tw-items-center tw-gap-s md:tw-flex md:tw-items-center lg:tw-hidden tw-text-[12px] tw-py-n tw-px-[12px] tw-rounded-[24px] tw-text-white/[0.8] tw-bg-collapsed-navmenu-button/30"
 										>
-											<span>MENU</span
+											<span>{{ $t("account.menu") }}</span
 											><i
 												class="tw-ml-[4px] tw-relative tw-top-[-2px]"
 												><svg
@@ -247,7 +247,7 @@
 													data-qa="deposit-button"
 													class="tw-whitespace-nowrap tw-p-n tw-text-white tw-cursor-pointer tw-rounded-sm tw-uppercase tw-font-bold tw-text-xxs tw-leading-4 tw-text-center hover:tw-text-white tw-border-solid tw-border-2 tw-border-transparent tw- tw-bg-secondary hover:tw-bg-secondary-hover tw-z-10"
 												>
-													DEPOSIT
+													{{ $t("account.deposit") }}
 												</button>
 											</div>
 											<!---->

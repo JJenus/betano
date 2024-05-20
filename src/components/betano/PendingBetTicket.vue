@@ -3,51 +3,15 @@
 	import { computed, onMounted, ref } from "vue";
 	import currency from "currency.js";
 	import { util } from "../../stores/utility";
+	import { useI18n } from "vue-i18n";
+
+	const { t } = useI18n();
 
 	const props = defineProps({
 		ticket: {
 			required: true,
 		},
 	});
-	[
-		{
-			betStatus: "pending",
-			id: 37277436323,
-			fromTime: "10:18",
-			fromDate: "09/05/2023",
-			fromDateTime: "2024-05-13T11:00:52.507Z",
-			bet: 50,
-			totalOdds: 0,
-			games: [
-				{
-					competition: "Australia Cup",
-					homeTeam: "Everton",
-					awayTeam: "Liverpool",
-					htScore: "0:0",
-					shfScore: "0:0",
-					scores: {
-						ht: {
-							home: 0,
-							away: 0,
-						},
-						sh: {
-							home: 0,
-							away: 0,
-						},
-					},
-					odds: 0,
-					event: "Correct Score",
-					startDate: "09/05/2023",
-					startTime: "19:30",
-					startDateTime: "2024-05-13T11:00:52.601Z",
-					gameStatus: "Game finished",
-					endDate: "09/05/2023",
-					endTime: "11:22",
-					endDateTime: "2024-05-13T11:00:52.601Z",
-				},
-			],
-		},
-	];
 
 	const settings = ref({
 		currency: util.getCurrency(),
@@ -67,9 +31,9 @@
 
 	const gameType = computed(() => {
 		const len = props.ticket.games.length;
-		if (len == 1) return "Single";
-		else if (len == 2) return "Double";
-		return len + " fold";
+		if (len == 1) return t("bet.single");
+		else if (len == 2) return t("bet.double");
+		return len + " " + t("bet.fold");
 	});
 
 	const winnings = computed(() => {
@@ -95,25 +59,40 @@
 		// Get the hour and minute parts
 		var hour = now.hour();
 		var minute = now.minute();
+		const realTime = now.format("HH:mm");
 
 		// Define thresholds for "Today" and "Tonight"
 		var todayThreshold = moment().endOf("day");
-		var tonightThreshold = moment().endOf("day").hour(20).minute(0); // Assuming tonight starts at 20:00
+		// var tonightThreshold = moment().endOf("day").hour(19).minute(58); // Assuming tonight starts at 20:00
 
 		let formattedDate;
 		// Check if the current time is before the "Today" threshold
-		if (now.isBefore(todayThreshold)) {
-			// Display "Today" and the time
-			formattedDate = "Today " + hour + ":" + minute;
-		} else if (now.isBefore(tonightThreshold)) {
-			// Display "Tonight" and the time
-			formattedDate = "Tonight " + hour + ":" + minute;
+		if (todayThreshold.isBefore(now)) {
+			if (hour < 20) {
+				// Display "Today" and the time
+				formattedDate = `${t("day.today")} ${realTime}`;
+			} else {
+				// Display "Tonight" and the time
+				formattedDate = `${t("day.tonight")} ${realTime}`;
+			}
 		} else {
 			// Handle cases for tomorrow or later
-			formattedDate = "Tomorrow " + hour + ":" + minute;
+			formattedDate = `${t("day.tomorrow")} ${realTime}`;
 		}
 		return formattedDate;
 	}
+
+	const gameEvent = (game) => {
+		let thePick;
+		if (game.event === "Correct Score") {
+			thePick = t("bet.cs");
+		} else if (game.event === "Match Result") {
+			thePick = t("bet.mr");
+		} else if (game.event === "Over/Under Total Goals") {
+			thePick = t("bet.to");
+		}
+		return thePick;
+	};
 
 	const pick = (game) => {
 		const h = game.scores.ht.home + game.scores.sh.home;
@@ -254,7 +233,7 @@
 											data-v-62118c81=""
 											data-qa="bet-label-title"
 											class="bet-label__title tw-truncate"
-											>Won</span
+											>{{ $t("btn.won") }}</span
 										><!--v-if-->
 									</div>
 								</div>
@@ -507,7 +486,7 @@
 										class="market-label"
 										bis_skin_checked="1"
 									>
-										{{ game.event }}
+										{{ gameEvent(game) }}
 									</div>
 									<div
 										data-v-1684fafa=""
@@ -550,7 +529,8 @@
 											</svg>
 											<span
 												class="tw-text-xxs tw-leading-xs tw-whitespace-nowrap"
-												>Score {{ score(game) }}</span
+												>{{ $t("bet.score") }}
+												{{ score(game) }}</span
 											>
 										</div>
 										<div
@@ -614,7 +594,7 @@
 								class="total-amounts-item__label"
 								bis_skin_checked="1"
 							>
-								Bet
+								{{ $t("bet.bet") }}
 							</div>
 							<div
 								data-v-5897e5f2=""
@@ -645,10 +625,10 @@
 								class="total-amounts-item__label"
 								bis_skin_checked="1"
 							>
-								<span v-if="ticket.betStatus !== 'won'"
-									>Potential winnings</span
-								>
-								<span v-else>Winnings</span>
+								<span v-if="ticket.betStatus !== 'won'">{{
+									$t("bet.pwinnings")
+								}}</span>
+								<span v-else>{{ $t("bet.winnings") }}</span>
 							</div>
 							<div
 								data-v-5897e5f2=""
@@ -685,10 +665,12 @@
 							translate-context="cashout"
 							data-msgid="CASH OUT"
 							data-current-language="en_NG"
-							>CASH OUT</span
-						><span class="bet-list__bet__footer__cashout__amount">{{
-							money(ticket.bet)
-						}}</span>
+						>
+							{{ $t("btn.cashoutU") }}
+						</span>
+						<span class="bet-list__bet__footer__cashout__amount">
+							{{ money(ticket.bet) }}
+						</span>
 					</button>
 				</div>
 			</div>
@@ -702,7 +684,7 @@
 					class="tw-inline-flex tw-items-center tw-cursor-pointer tw-text-s tw-leading-s tw-font-regular tw-flex-1 tw-justify-center tw-gap-s tw-text-n-28-cloud-burst"
 					data-qa="my-bets-rebet-cta"
 				>
-					Rebet
+					{{ $t("bet.rebet") }}
 					<svg
 						viewBox="0 0 16 17"
 						fill="none"
@@ -729,7 +711,7 @@
 					class="tw-inline-flex tw-items-center tw-cursor-pointer tw-text-s tw-leading-s tw-font-regular tw-flex-1 tw-justify-center tw-gap-s tw-text-n-28-cloud-burst"
 					data-qa="my-bets-share-cta"
 				>
-					Share it
+					{{ $t("bet.share") }}
 					<svg
 						viewBox="0 0 12 12"
 						fill="none"
