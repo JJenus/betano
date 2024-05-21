@@ -7,6 +7,7 @@
 	import LiveBetTicket from "../../components/betano/LiveBetTicket.vue";
 	import PendingBetTicket from "../../components/betano/PendingBetTicket.vue";
 	import WonBetTicket from "../../components/betano/WonBetTicket.vue";
+	const language = ref(util.getLang());
 
 	import { bets } from "../../stores/bets";
 
@@ -648,7 +649,7 @@
 										class="sb-sponsorships__wrapper__text"
 										bis_skin_checked="1"
 									>
-										{{$t("sponsors")}}
+										{{ $t("sponsors") }}
 									</div>
 								</div>
 								<div
@@ -1501,7 +1502,68 @@
 												{{ $t("payment") }}
 											</h3>
 										</div>
+										<!-- Portugal PAyments -->
 										<ul
+											v-if="language === 'pt'"
+											class="sb-footer__common__body sb-footer__common__body--inline"
+										>
+											<li
+												class="sb-footer__payments__item"
+												style="
+													background-image: url('https://assets.gmlinteractive.com/sites/15/import/multibanco_way_b.jpg');
+												"
+											></li>
+											<li
+												class="sb-footer__payments__item"
+												style="
+													background-image: url('https://assets.gmlinteractive.com/sites/15/import/multibanco_b.jpg');
+												"
+											></li>
+											<li
+												class="sb-footer__payments__item"
+												style="
+													background-image: url('https://assets.gmlinteractive.com/sites/15/import/visa_2022_6_16_10_46_29_b.jpg');
+												"
+											></li>
+											<li
+												class="sb-footer__payments__item"
+												style="
+													background-image: url('https://assets.gmlinteractive.com/sites/15/import/mastercard_b.jpg');
+												"
+											></li>
+											<li
+												class="sb-footer__payments__item"
+												style="
+													background-image: url('https://assets.gmlinteractive.com/sites/15/import/maestro_b.jpg');
+												"
+											></li>
+											<li
+												class="sb-footer__payments__item"
+												style="
+													background-image: url('https://assets.gmlinteractive.com/sites/15/import/applepay_b.jpg');
+												"
+											></li>
+											<li
+												class="sb-footer__payments__item"
+												style="
+													background-image: url('https://assets.gmlinteractive.com/sites/15/import/skrill_b.jpg');
+												"
+											></li>
+											<li
+												class="sb-footer__payments__item"
+												style="
+													background-image: url('https://assets.gmlinteractive.com/sites/15/import/paysafe_b.jpg');
+												"
+											></li>
+											<li
+												class="sb-footer__payments__item"
+												style="
+													background-image: url('https://assets.gmlinteractive.com/sites/15/import/neteller_b.jpg');
+												"
+											></li>
+										</ul>
+										<ul
+											v-if="language === 'en'"
 											class="sb-footer__common__body sb-footer__common__body--inline"
 										>
 											<li

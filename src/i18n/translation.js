@@ -13,6 +13,10 @@ const aLocales = [
 		locale: "de",
 		flag: "https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg",
 	},
+	{
+		locale: "pt",
+		flag: "https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg",
+	},
 ];
 
 const Trans = {

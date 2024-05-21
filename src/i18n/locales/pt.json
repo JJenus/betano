@@ -1,0 +1,88 @@
+{
+	"locale": {
+		"locale": "Português",
+		"en": "Inglês",
+		"es": "Espanhol",
+		"fr": "Francês",
+		"pt": "Português",
+		"de": "Alemão"
+	},
+	"day": {
+		"today": "Hoje",
+		"tomorrow": "Amanhã",
+		"tonight": "Esta noite"
+	},
+	"account": {
+		"deposit": "DEPÓSITO",
+		"menu": "MENU"
+	},
+	"nav": {
+		"sports": "Desportos",
+		"mybets": "Apostas",
+		"explore": "Explorar",
+		"home": "Início",
+		"live": "Ao Vivo"
+	},
+	"bet": {
+		"bet": "aposta",
+		"score": "Pontuação",
+		"winnings": "Ganhos",
+		"pwinnings": "Ganhos Potenciais",
+		"double": "Dobro",
+		"fold": "desistir",
+		"open": "Aberto",
+		"single": "Único",
+		"settled": "Resolvido",
+		"bookingcode": "Você tem um código de reserva?",
+		"insertcode": "Insira o código de reserva aqui...",
+		"share": "Compartilhar",
+		"cs": "Pontuação Correta",
+		"mr": "Resultado da Partida",
+		"to": "Mais/Menos Gols Totais",
+		"rebet": "Reapostar"
+	},
+	"btn": {
+		"cashout": "Sacar",
+		"cashoutU": "SACAR",
+		"won": "Ganhou",
+		"lost": "Perdeu",
+		"void": "Nulo",
+		"live": "Ao Vivo",
+		"loading": "Carregando",
+		"load": "CARREGAR",
+		"signin": "Entrar",
+		"signup": "Inscrever-se",
+		"signout": "Sair",
+		"submit": "Enviar",
+		"save": "Salvar"
+	},
+	"usefulLinks": {
+		"links": "Links Úteis",
+		"help": "Centro de Ajuda",
+		"rules": "Regras de Aposta",
+		"tnc": "Termos e Condições",
+		"rgpp": "Informações de Jogo Responsável e Proteção ao Jogador",
+		"security": "Página de Segurança",
+		"bonus": "Termos de Bônus",
+		"privacy": "Política de Privacidade",
+		"trans": "Transações",
+		"guides": "Guias",
+		"atnc": "Termos e Condições de Afiliados",
+		"affiliates": "Afiliados",
+		"compliance": "Política de Conformidade",
+		"careers": "Carreiras"
+	},
+	"about": {
+		"about": "Sobre Nós",
+		"message": "Este site é operado pela Kaizen Gaming Nigeria Limited, uma empresa estabelecida na Nigéria com o número de registro 2004782, com endereço registrado na 6ª ANDAR LANDMARK TOWERS, 5B, WATER CORPORATION ROAD, VICTORIA ISLAND, ETI-OSA, LAGOS STATE. A Kaizen Gaming Nigeria Limited é licenciada e regulamentada pela Comissão Reguladora da Loteria Nacional sob a licença 0001085, emitida em 24 de março de 2023."
+	},
+	"history": "HISTÓRICO COMPLETO",
+	"back": "Voltar",
+	"mobileapps": {
+		"title": "Aplicações Mobile",
+		"message": "Entra em Modo Betano onde quer que estejas, com o nosso site mobile e a aplicação de telemóvel para Android e iOS."
+	},
+	"payment": "Métodos de Pagamento",
+	"sponsors": "A Betano apoia orgulhosamente o Esporte e o Jogo Limpo.",
+	"responsible": "Por favor, joga com responsabilidade!"
+}
