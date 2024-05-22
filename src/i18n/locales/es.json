@@ -81,7 +81,12 @@
 		"title": "Aplicaciones Móviles",
 		"message": "Vive la experiencia Betano dondequiera que estés, desde nuestro sitio móvil y la aplicación móvil para Android e iOS."
 	},
+	"awards": "Premios y Distinciones",
 	"payment": "Métodos de Pago",
+	"sponsor": {
+		"title": "PATROCINADOR OFICIAL",
+		"message": "Betano apoya con orgullo los Deportes y el Juego Limpio."
+	},
 	"sponsors": "Betano apoya con orgullo los Deportes y el Juego Limpio.",
 	"responsible": "JUEGA RESPONSABLEMENTE {'|'} SOLO MAYORES DE 18 AÑOS PARA REGISTRARSE O JUGAR EN BETANO {'|'} JUEGA RESPONSABLEMENTE {'|'} SI DESEAS HABLAR CON ALGUIEN SOBRE TU PATRÓN DE APUESTAS, NO DUDES EN CONTACTAR A GAMBLE ALERT"
 }

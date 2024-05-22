@@ -191,7 +191,7 @@
 										>Account Balance</label
 									>
 									<input
-										type="number"
+										type="text"
 										class="form-control form-control-lg"
 										aria-describedby="stake"
 										v-model="form.accountBalance"

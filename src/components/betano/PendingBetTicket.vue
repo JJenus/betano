@@ -21,8 +21,18 @@
 	const banner = ref({});
 
 	const money = (money) => {
+		let decimalSep = ".";
+		let thousandSep = ",";
+
+		if (util.getLang() !== "en") {
+			decimalSep = ",";
+			thousandSep = ".";
+		}
+
 		const cash = currency(money, {
 			symbol: settings.value.currency,
+			decimal: decimalSep,
+			separator: thousandSep,
 		}).format();
 
 		// return cash.split(".")[1] == "00" ? cash.split(".")[0] : cash;

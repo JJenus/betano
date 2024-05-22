@@ -82,7 +82,12 @@
 		"title": "Aplicações Mobile",
 		"message": "Entra em Modo Betano onde quer que estejas, com o nosso site mobile e a aplicação de telemóvel para Android e iOS."
 	},
+	"awards": "Prêmios e Distinções",
 	"payment": "Métodos de Pagamento",
+	"sponsor": {
+		"title": "PATROCINADOR OFICIAL",
+		"message": "Apoiamos o Desporto e o Fair-Play"
+	},
 	"sponsors": "A Betano apoia orgulhosamente o Esporte e o Jogo Limpo.",
 	"responsible": "Por favor, joga com responsabilidade!"
 }

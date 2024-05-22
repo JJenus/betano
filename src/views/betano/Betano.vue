@@ -643,13 +643,13 @@
 									bis_skin_checked="1"
 								>
 									<h3 class="sb-sponsorships__wrapper__title">
-										SPONSORSHIPS
+										{{ $t("sponsor.title") }}
 									</h3>
 									<div
 										class="sb-sponsorships__wrapper__text"
 										bis_skin_checked="1"
 									>
-										{{ $t("sponsors") }}
+										{{ $t("sponsor.message") }}
 									</div>
 								</div>
 								<div
@@ -1689,7 +1689,7 @@
 												<h3
 													class="sb-footer__common__header__title"
 												>
-													Awards and Distinctions
+													{{ $t("awards") }}
 												</h3>
 											</div>
 											<div
