@@ -25,7 +25,7 @@
 	},
 	"bet": {
 		"bet": "aposta",
-		"score": "Pontuação",
+		"score": "Resultado",
 		"winnings": "Ganhos",
 		"pwinnings": "Ganhos Potenciais",
 		"double": "Dobro",
@@ -36,7 +36,7 @@
 		"bookingcode": "Você tem um código de reserva?",
 		"insertcode": "Insira o código de reserva aqui...",
 		"share": "Compartilhar",
-		"cs": "Pontuação Correta",
+		"cs": "Resultado Correto",
 		"mr": "Resultado da Partida",
 		"to": "Mais/Menos Gols Totais",
 		"rebet": "Reapostar"

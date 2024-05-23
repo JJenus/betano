@@ -1,7 +1,6 @@
 <script setup>
 	import moment from "moment";
 	import { computed, onMounted, ref } from "vue";
-	import currency from "currency.js";
 	import { util } from "../../stores/utility";
 	import { useI18n } from "vue-i18n";
 
@@ -13,31 +12,9 @@
 		},
 	});
 
-	const settings = ref({
-		currency: util.getCurrency(),
-	});
-
 	const hidden = ref(false);
-	const banner = ref({});
 
-	const money = (money) => {
-		let decimalSep = ".";
-		let thousandSep = ",";
-
-		if (util.getLang() !== "en") {
-			decimalSep = ",";
-			thousandSep = ".";
-		}
-
-		const cash = currency(money, {
-			symbol: settings.value.currency,
-			decimal: decimalSep,
-			separator: thousandSep,
-		}).format();
-
-		// return cash.split(".")[1] == "00" ? cash.split(".")[0] : cash;
-		return cash;
-	};
+	const money = util.money;
 
 	const gameType = computed(() => {
 		const len = props.ticket.games.length;

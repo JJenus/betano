@@ -42,6 +42,7 @@ export const util = {
 	},
 
 	getCurrency: () => {
+		
 		let data = localStorage.getItem(bKey);
 		if (data == undefined || data == null) return "$";
 		return data;
@@ -69,16 +70,21 @@ export const util = {
 	},
 
 	money(money) {
-		const config = inject("settings", {
-			currency: "USD",
-			currencySymbol: "$",
-			language: "en",
-			verificationFee: 5,
-		});
-		const amount = currency(money, {
-			symbol: config.value.currencySymbol,
+		let decimalSep = ".";
+		let thousandSep = ",";
+
+		if (util.getLang() !== "en") {
+			decimalSep = ",";
+			thousandSep = ".";
+		}
+
+		const cash = currency(money, {
+			symbol: util.getCurrency(),
+			decimal: decimalSep,
+			separator: thousandSep,
 		}).format();
-		return amount;
+		
+		return cash;
 	},
 
 	customRound(number, isBetano = true) {

@@ -1,26 +1,12 @@
 <script setup>
 	import { ref } from "vue";
-	import currency from "currency.js";
 	import { util } from "../../stores/utility";
-
 	import { bets } from "../../stores/bets";
 
-	const tickets = bets.bets();
-	console.log("Balance", bets.balance());
 	const totalBal = ref(bets.balance());
 
-	const settings = ref({
-		currency: util.getCurrency(),
-	});
 
-	const money = (money) => {
-		const cash = currency(money, {
-			symbol: settings.value.currency,
-		}).format();
-
-		// return cash.split(".")[1] == "00" ? cash.split(".")[0] : cash;
-		return cash;
-	};
+	const money = util.money;
 </script>
 <template>
 	<section data-v-794f6291="" class="tw-sticky tw-top-0 tw-z-[11]">

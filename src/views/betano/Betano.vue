@@ -1,35 +1,20 @@
 <script setup>
 	import { ref } from "vue";
-	import currency from "currency.js";
 	import { util } from "../../stores/utility";
 
 	import Header from "../../components/betano/Header.vue";
-	import LiveBetTicket from "../../components/betano/LiveBetTicket.vue";
 	import PendingBetTicket from "../../components/betano/PendingBetTicket.vue";
-	import WonBetTicket from "../../components/betano/WonBetTicket.vue";
+	
 	const language = ref(util.getLang());
 
 	import { bets } from "../../stores/bets";
 
 	const tickets = bets.bets();
-	const totalBal = bets.balance();
 	const dropDown = ref({
 		usefulLinks: false,
 		about: false,
 	});
 
-	const settings = ref({
-		currency: util.getCurrency(),
-	});
-
-	const money = (money) => {
-		const cash = currency(money, {
-			symbol: settings.value.currency,
-		}).format();
-
-		// return cash.split(".")[1] == "00" ? cash.split(".")[0] : cash;
-		return cash;
-	};
 	const wonTickets = ref(
 		tickets.filter((e) => {
 			return e.betStatus === "won";
@@ -54,7 +39,6 @@
 		}
 	};
 
-	console.log(bets.bets());
 </script>
 
 <template>
