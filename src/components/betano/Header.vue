@@ -1,12 +1,9 @@
 <script setup>
 	import { ref } from "vue";
 	import { util } from "../../stores/utility";
-	import { bets } from "../../stores/bets";
-
-	const totalBal = ref(bets.balance());
-
 
 	const money = util.money;
+	const totalBal = ref(money(util.settings().accountBalance));
 </script>
 <template>
 	<section data-v-794f6291="" class="tw-sticky tw-top-0 tw-z-[11]">
@@ -226,7 +223,7 @@
 													<div
 														class="tw-font-bold tw-text-white tw-mr-xs tw-whitespace-nowrap"
 													>
-														{{ money(totalBal) }}
+														{{ totalBal }}
 													</div>
 												</div>
 												<button

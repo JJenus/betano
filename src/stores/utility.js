@@ -9,7 +9,7 @@ const options = {
 
 const bKey = "Currency7sd56d76f";
 const lKey = "lang7sd56d76f";
-
+const settingsKey = "settingsTano";
 
 export const alert = {
 	success(title = false, message = "") {
@@ -29,12 +29,19 @@ export const alert = {
 
 export const util = {
 	settings: () => {
-		return {
-			currency: "USD",
-			currencySymbol: "$",
-			language: "en",
-			verificationFee: 5,
-		};
+		let data = localStorage.getItem(settingsKey);
+		if (data == undefined || data == null) {
+			return {
+				accountBalance: 0,
+				currency: "$",
+				lang: "en",
+			};
+		}
+		return JSON.parse(data);
+	},
+
+	saveSettings: (data) => {
+		localStorage.setItem(settingsKey, JSON.stringify(data));
 	},
 
 	setCurrency: (currency) => {
@@ -42,7 +49,6 @@ export const util = {
 	},
 
 	getCurrency: () => {
-		
 		let data = localStorage.getItem(bKey);
 		if (data == undefined || data == null) return "$";
 		return data;
@@ -72,18 +78,23 @@ export const util = {
 	money(money) {
 		let decimalSep = ".";
 		let thousandSep = ",";
+		let pattern = `!#`;
+
+		const actual = currency(money).value;
 
 		if (util.getLang() !== "en") {
 			decimalSep = ",";
 			thousandSep = ".";
+			pattern = `#!`;
 		}
 
-		const cash = currency(money, {
+		const cash = currency(actual, {
 			symbol: util.getCurrency(),
 			decimal: decimalSep,
 			separator: thousandSep,
+			pattern: pattern,
 		}).format();
-		
+
 		return cash;
 	},
 
