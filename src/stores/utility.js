@@ -49,9 +49,7 @@ export const util = {
 	},
 
 	getCurrency: () => {
-		let data = localStorage.getItem(bKey);
-		if (data == undefined || data == null) return "$";
-		return data;
+		return util.settings().currency;
 	},
 
 	setLang: (lang) => {
@@ -59,9 +57,7 @@ export const util = {
 	},
 
 	getLang: () => {
-		let data = localStorage.getItem(lKey);
-		if (data == undefined || data == null) return "en";
-		return data;
+		return util.settings().lang;
 	},
 
 	search(area, input) {
@@ -86,6 +82,7 @@ export const util = {
 			decimalSep = ",";
 			thousandSep = ".";
 			pattern = `#!`;
+			console.log("Hello")
 		}
 
 		const cash = currency(actual, {

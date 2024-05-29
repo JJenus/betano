@@ -1,6 +1,7 @@
 <script setup>
 	// import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js";
 
+	// localStorage.clear();
 	import { onMounted, ref } from "vue";
 	import VueDatePicker from "@vuepic/vue-datepicker";
 	import { bets } from "../stores/bets";
@@ -42,7 +43,13 @@
 	const saveBalance = () => {
 		let accountBalanceString = form.value.accountBalance;
 		let trimmedBalanceString = accountBalanceString.slice(0, -1);
-		let accountBalanceNumber = Number(trimmedBalanceString);
+		let accountBalanceNumber;
+
+		try {
+			accountBalanceNumber = Number(trimmedBalanceString);
+		} catch (error) {
+			alert.error("Invalid number");
+		}
 
 		form.accountBalance = accountBalanceNumber;
 		console.log(form.value.accountBalance);
@@ -152,18 +159,18 @@
 
 	onMounted(() => {
 		addGame();
-		// IMask(document.getElementById("total-balance"), {
-		// 	mask: Number, // enable number mask
-		// 	// other options are optional with defaults below
-		// 	scale: 2, // digits after point, 0 for integers
-		// 	thousandsSeparator: ",", // any single char
-		// 	padFractionalZeros: false, // if true, then pads zeros at end to the length of scale
-		// 	normalizeZeros: true, // appends or removes zeros at ends
-		// 	radix: ".", // fractional delimiter
-		// 	mapToRadix: ["."], // symbols to process as radix
-		// 	min: 0,
-		// 	autofix: true,
-		// });
+		IMask(document.getElementById("total-balance"), {
+			mask: Number, // enable number mask
+			// other options are optional with defaults below
+			scale: 2, // digits after point, 0 for integers
+			thousandsSeparator: ",", // any single char
+			padFractionalZeros: false, // if true, then pads zeros at end to the length of scale
+			normalizeZeros: true, // appends or removes zeros at ends
+			radix: ".", // fractional delimiter
+			mapToRadix: ["."], // symbols to process as radix
+			min: 0,
+			autofix: true,
+		});
 	});
 </script>
 
