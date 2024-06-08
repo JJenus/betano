@@ -23,6 +23,7 @@
 		"live": "En Vivo"
 	},
 	"bet": {
+		"over": "Sobre",
 		"bet": "apuesta",
 		"score": "Puntuación",
 		"winnings": "Ganancias",

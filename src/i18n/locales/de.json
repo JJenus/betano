@@ -23,10 +23,10 @@
 		"live": "Live"
 	},
 	"bet": {
-		"bet": "wette",
+		"bet": "Einsats",
 		"score": "Punktestand",
 		"winnings": "Gewinne",
-		"pwinnings": "Potenzielle Gewinne",
+		"pwinnings": "Mögliche Gewinne",
 		"double": "Doppelt",
 		"fold": "fold",
 		"open": "Offen",
@@ -38,7 +38,8 @@
 		"cs": "Richtiges Ergebnis",
 		"mr": "Spielergebnis",
 		"to": "Über/Unter Gesamttore",
-		"rebet": "Nochmal Wetten"
+		"rebet": "Nochmal Wetten",
+		"over": "Über"
 	},
 	"btn": {
 		"cashout": "Auszahlen",

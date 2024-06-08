@@ -24,6 +24,7 @@
 		"live": "Ao Vivo"
 	},
 	"bet": {
+		"over": "Mais de",
 		"bet": "aposta",
 		"score": "Resultado",
 		"winnings": "Ganhos",

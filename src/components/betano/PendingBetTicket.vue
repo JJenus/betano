@@ -90,7 +90,7 @@
 		} else if (game.event === "Match Result") {
 			thePick = h > a ? game.homeTeam : h === a ? "Draw" : game.awayTeam;
 		} else if (game.event === "Over/Under Total Goals") {
-			thePick = `Over ${a + h - 1}.5`;
+			thePick = `${t("bet.over")} ${a + h - 1}.5`;
 		}
 		return thePick;
 	};
