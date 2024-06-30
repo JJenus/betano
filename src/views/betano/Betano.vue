@@ -3,7 +3,7 @@
 	import { util } from "../../stores/utility";
 
 	import Header from "../../components/betano/Header.vue";
-	import PendingBetTicket from "../../components/betano/PendingBetTicket.vue";
+	import PendingBetTicket from "../../components/betano/WonBetTicket.vue";
 	
 	const language = ref(util.getLang());
 

@@ -57,19 +57,19 @@
 											class="tw-relative tw-top-[-2px] tw-mx-0 tw-m-0 tw-mr-n md:tw-min-w-[125px]"
 										>
 											<a
-												href="https://www.betano.ng/"
+												href="/"
 												class="tw-pr-m tw-hidden md:tw-flex"
 												><img
 													width="108"
 													height="32"
-													src="https://www.betano.ng/assets/logo__betanoc4b9c3b903ff2c4383f679a31552f11a.svg"
+													src="https://www.betano.ng/assets/logo__betanoc1840171dd4ac78530abc18b226604f7.svg"
 													alt="Betano Logo" /></a
 											><a
-												href="https://www.betano.ng/"
+												href="/"
 												class="tw-flex md:tw-hidden"
 												><img
 													class="tw-max-w-[initial]"
-													src="https://www.betano.ng/assets/logo__betano__small3d8473b22c3d7dc71a27a80e2278f06f.svg"
+													src="https://www.betano.ng/assets/logo__betano__small303bcb4316f91ccd96841e4c6842a038.svg"
 													width="29"
 													height="40"
 													alt="Betano Logo"

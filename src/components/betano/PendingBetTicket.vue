@@ -516,7 +516,7 @@
 											</svg>
 											<span
 												class="tw-text-xxs tw-leading-xs tw-whitespace-nowrap"
-												>{{ $t("bet.score") }}
+												> {{ $t("bet.score") }}
 												{{ score(game) }}</span
 											>
 										</div>
