@@ -675,9 +675,9 @@
 							translate-context="cashout"
 							data-msgid=" CASH OUT "
 							data-current-language="en_NG"
-							>CASH OUT</span
+							>{{ $t("btn.cashoutU") }}</span
 						><span class="bet-list__bet__footer__cashout__amount"
-							>₦461.30</span
+							>{{ money(ticket.bet) }}</span
 						>
 					</button>
 				</div>
