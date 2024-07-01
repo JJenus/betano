@@ -72,7 +72,7 @@ export const util = {
 	},
 
 	money(money) {
-		let decimalSep = ".";
+		let decimalSep = "."; 
 		let thousandSep = ",";
 		let pattern = `!#`;
 

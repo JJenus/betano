@@ -25,6 +25,7 @@
 	},
 	"bet": {
 		"over": "Mais de",
+		"draw": "Empate",
 		"bet": "aposta",
 		"score": "Resultado",
 		"winnings": "Ganhos",

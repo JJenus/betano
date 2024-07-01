@@ -52,9 +52,15 @@
 		var todayThreshold = moment().endOf("day");
 		// var tonightThreshold = moment().endOf("day").hour(19).minute(58); // Assuming tonight starts at 20:00
 
+		console.log(
+			"End of Day:",
+			todayThreshold.format("dd/mm/yy HH:mm A"),
+			"C Date:",
+			now.format("dd/mm/yy HH:mm A")
+		);
 		let formattedDate;
 		// Check if the current time is before the "Today" threshold
-		if (todayThreshold.isBefore(now)) {
+		if (now.isSame(moment(), "day")) {
 			if (hour < 20) {
 				// Display "Today" and the time
 				formattedDate = `${t("day.today")} ${realTime}`;
@@ -88,7 +94,8 @@
 		if (game.event === "Correct Score") {
 			thePick = `${h} - ${a}`;
 		} else if (game.event === "Match Result") {
-			thePick = h > a ? game.homeTeam : h === a ? "Draw" : game.awayTeam;
+			thePick =
+				h > a ? game.homeTeam : h === a ? t("bet.draw") : game.awayTeam;
 		} else if (game.event === "Over/Under Total Goals") {
 			thePick = `${t("bet.over")} ${a + h - 1}.5`;
 		}

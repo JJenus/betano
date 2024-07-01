@@ -26,6 +26,7 @@
 
 	"bet": {
 		"over": "Over",
+		"draw": "Draw",
 		"bet": "bet",
 		"score": "Score",
 		"winnings": "Winnings",

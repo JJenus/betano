@@ -292,9 +292,9 @@
 															>
 														</div>
 														<div
-															style="
-																margin-top: 7px;
-																margin-left: -63px;
+															:style="
+																`margin-top: 7px;
+																margin-left: ${language == 'de'? '-100px': language == 'pt'? '-75px' : '-64px'};`
 															"
 															class="mt-4"
 														>
@@ -302,8 +302,8 @@
 																v-if="selected"
 																data-v-09e182ee=""
 																class="tab-row__indicator"
-																style="
-																	width: 65px;
+																:style="
+																	`width: ${language == 'de'? '100px' : language == 'pt'? '77px' : '65px'};`
 																"
 															></span>
 														</div>

@@ -39,7 +39,8 @@
 		"mr": "Spielergebnis",
 		"to": "Über/Unter Gesamttore",
 		"rebet": "Nochmal Wetten",
-		"over": "Über"
+		"over": "Über",
+		"draw": "Unentschieden"
 	},
 	"btn": {
 		"cashout": "Auszahlen",
