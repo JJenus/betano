@@ -12,7 +12,7 @@
 		},
 	});
 
-	const hidden = ref(false);
+	const hidden = ref(true);
 
 	const money = util.money;
 
@@ -36,7 +36,7 @@
 		return home + del + away;
 	}
 
-	const toggleShow = () => {
+	const toggleMain = () => {
 		hidden.value = !hidden.value;
 	};
 
@@ -52,9 +52,15 @@
 		var todayThreshold = moment().endOf("day");
 		// var tonightThreshold = moment().endOf("day").hour(19).minute(58); // Assuming tonight starts at 20:00
 
+		console.log(
+			"End of Day:",
+			todayThreshold.format("dd/mm/yy HH:mm A"),
+			"C Date:",
+			now.format("dd/mm/yy HH:mm A")
+		);
 		let formattedDate;
 		// Check if the current time is before the "Today" threshold
-		if (todayThreshold.isBefore(now)) {
+		if (now.isSame(moment(), "day")) {
 			if (hour < 20) {
 				// Display "Today" and the time
 				formattedDate = `${t("day.today")} ${realTime}`;
@@ -88,7 +94,8 @@
 		if (game.event === "Correct Score") {
 			thePick = `${h} - ${a}`;
 		} else if (game.event === "Match Result") {
-			thePick = h > a ? game.homeTeam : h === a ? "Draw" : game.awayTeam;
+			thePick =
+				h > a ? game.homeTeam : h === a ? t("bet.draw") : game.awayTeam;
 		} else if (game.event === "Over/Under Total Goals") {
 			thePick = `${t("bet.over")} ${a + h - 1}.5`;
 		}
@@ -137,6 +144,7 @@
 						bis_skin_checked="1"
 					>
 						<button
+							v-if="ticket.betStatus !== 'won'"
 							data-v-13231c12=""
 							class="markets__market__header__icons__icon"
 							data-qa="bet-list-item-activity-card-pin"
@@ -156,7 +164,12 @@
 						</button>
 						<div
 							data-v-13231c12=""
-							class="tw-flex tw-flex-col tw-items-start tw-h-[34px] tw-pl-n tw-overflow-hidden tw-cursor-pointer tw-border-l-n tw-border-solid tw-border-[color:var(--bet-activity-card-header-divider-color)]"
+							:class="
+								ticket.betStatus === 'won'
+									? ''
+									: 'tw-border-l-n tw-border-solid tw-border-[color:var(--bet-activity-card-header-divider-color)]'
+							"
+							class="tw-flex tw-flex-col tw-items-start tw-h-[34px] tw-pl-n tw-overflow-hidden tw-cursor-pointer "
 							bis_skin_checked="1"
 						>
 							<div
@@ -516,7 +529,8 @@
 											</svg>
 											<span
 												class="tw-text-xxs tw-leading-xs tw-whitespace-nowrap"
-												> {{ $t("bet.score") }}
+											>
+												{{ $t("bet.score") }}
 												{{ score(game) }}</span
 											>
 										</div>
@@ -644,6 +658,7 @@
 					bis_skin_checked="1"
 				>
 					<button
+						style="background-color: #2c3744"
 						class="uk-button uk-button-secondary bet-list__bet__footer__cashout__button GTM-cashoutButton"
 						data-qa="cashout-button"
 					>
