@@ -61,15 +61,15 @@
 												class="tw-pr-m tw-hidden md:tw-flex"
 												><img
 													width="108"
-													height="32"
-													src="https://www.betano.ng/assets/logo__betanoc1840171dd4ac78530abc18b226604f7.svg"
+													height="32" 
+													src="/assets/betano/logo__betano.svg"
 													alt="Betano Logo" /></a
 											><a
 												href="/"
 												class="tw-flex md:tw-hidden"
 												><img
 													class="tw-max-w-[initial]"
-													src="https://www.betano.ng/assets/logo__betano__small303bcb4316f91ccd96841e4c6842a038.svg"
+													src="/assets/betano/logo__betano__small.svg"
 													width="29"
 													height="40"
 													alt="Betano Logo"
